@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.mgg.service.TbTransMapper" >
+    <!--<cache />-->
+    <resultMap id="resParam" type="com.mgg.model.master.TbTrans" >
+        <result column="trxid" property="trxid" />
+        <result column="trans_dt" property="trans_dt" />
+        <result column="trans_tm" property="trans_tm" />
+        <result column="status" property="status" />
+        <result column="retnum" property="retnum" />
+        <result column="customer_id" property="customer_id" />
+        <result column="customer_name" property="customer_name" />
+        <result column="customer_address" property="customer_address" />
+        <result column="amount" property="amount" />
+        <result column="fine" property="fine" />
+        <result column="total" property="total" />
+        <result column="response" property="response" />
+        <result column="additional_data" property="additional_data" />
+        <result column="product_id" property="product_id" />
+        <result column="merchant_id" property="merchant_id" />
+        <result column="periode" property="periode" />
+    </resultMap>
+    
+    <select id="find0100Commit" resultType="TbTrans">
+        SELECT 
+        	trxid,
+			trans_dt,
+			trans_tm,
+			status,
+			retnum,
+			customer_id,
+			customer_name,
+			customer_address,
+			amount,
+			fine,
+			total,
+			response,
+			additional_data,
+			product_id,
+			merchant_id,
+			periode
+		FROM
+		    tb_trans
+		WHERE
+		    customer_id = #{customer_id} AND
+		    product_id = #{product_id} AND
+		    periode = #{periode} AND
+		    status IN(01,00)
+    </select>
+    
+    <select id="findTxBeforePayment" resultType="TbTrans">
+        SELECT 
+		    trxid,
+			trans_dt,
+			trans_tm,
+			status,
+			retnum,
+			customer_id,
+			customer_name,
+			customer_address,
+			amount,
+			fine,
+			total,
+			response,
+			additional_data,
+			product_id,
+			merchant_id,
+			periode
+		FROM
+		    tb_trans
+		WHERE
+		    customer_id = #{customer_id} AND
+		    product_id = #{product_id} AND
+		    status IN(03,02)
+    </select>
+    
+    <delete id="deleteByTxIdBeforePayment" parameterType="hashmap">
+      DELETE FROM tb_trans WHERE 
+      customer_id = #{customer_id} AND 
+      product_id = #{product_id} AND 
+      status IN(03,02)
+   </delete>
+   
+   <select id="findTxVacctNo" resultType="TbTrans">
+        SELECT 
+		    trxid,
+			trans_dt,
+			trans_tm,
+			status,
+			retnum,
+			customer_id,
+			customer_name,
+			customer_address,
+			amount,
+			fine,
+			total,
+			response,
+			additional_data,
+			product_id,
+			merchant_id,
+			periode
+		FROM
+		    tb_trans
+		WHERE
+		    customer_id = #{customer_id} AND
+		    product_id = #{product_id} AND
+		    periode = #{periode}
+    </select>
+    
+    <insert id="insertTxId" parameterType="hashmap">
+        INSERT INTO tb_trans (
+		    trxid,
+			trans_dt,
+			trans_tm,
+			status,
+			retnum,
+			customer_id,
+			customer_name,
+			customer_address,
+			amount,
+			fine,
+			total,
+			response,
+			additional_data,
+			product_id,
+			merchant_id,
+			periode
+		)
+		VALUES 
+		(
+			#{trxid},
+		    DATE_FORMAT(NOW(),'%Y%m%d'),
+		    DATE_FORMAT(NOW(),'%H%i%s'),
+		    #{status},
+			#{retnum},
+			#{customer_id},
+			#{customer_name},
+			#{customer_address},
+			#{amount},
+			#{fine},
+			#{total},
+			#{response},
+			#{additional_data},
+			#{product_id},
+			#{merchant_id},
+			#{periode}
+		)
+    </insert>
+    
+    <update id="updateTxIdd" parameterType="hashmap">
+        UPDATE tb_trans 
+		    <set>
+		      TRANS_DT = DATE_FORMAT(NOW(),'%Y%m%d'), 
+	    	  TRANS_TM = DATE_FORMAT(NOW(),'%H%i%s'),
+		      <if test="trxid != null">trxid=#{trxid}</if>,
+		      <if test="status != null">status=#{status}</if>,
+		      <if test="retnum != null">retnum=#{retnum}</if>,
+		      <if test="customer_id != null">customer_id=#{customer_id}</if>,
+		      <if test="customer_name != null">customer_name=#{customer_name}</if>,
+		      <if test="customer_address != null">customer_address=#{customer_address}</if>,
+		      <if test="amount != null">amount=#{amount}</if>,
+		      <if test="fine != null">fine=#{fine}</if>,
+		      <if test="total != null">total=#{total}</if>,
+		      <if test="response != null">response=#{response}</if>,
+		      <if test="additional_data != null">additional_data=#{additional_data}</if>,
+		      <if test="product_id != null">product_id=#{product_id}</if>,
+		      <if test="merchant_id != null">merchant_id=#{merchant_id}</if>,
+		      <if test="periode != null">periode=#{periode}</if>
+		    </set>
+		WHERE 
+			trxid = #{trxid_old}
+		AND
+			periode = #{periode}
+		AND
+			status = #{status}
+		
+    </update>
+    
+    <update id="updateTxId0203" parameterType="hashmap">
+        UPDATE tb_trans 
+		    <set>
+		      TRANS_DT = DATE_FORMAT(NOW(),'%Y%m%d'), 
+	    	  TRANS_TM = DATE_FORMAT(NOW(),'%H%i%s'),
+		      <if test="trxid != null">trxid=#{trxid}</if>,
+		      <if test="status != null">status=#{status}</if>,
+		      <if test="retnum != null">retnum=#{retnum}</if>,
+		      <if test="customer_id != null">customer_id=#{customer_id}</if>,
+		      <if test="customer_name != null">customer_name=#{customer_name}</if>,
+		      <if test="customer_address != null">customer_address=#{customer_address}</if>,
+		      <if test="amount != null">amount=#{amount}</if>,
+		      <if test="fine != null">fine=#{fine}</if>,
+		      <if test="total != null">total=#{total}</if>,
+		      <if test="response != null">response=#{response}</if>,
+		      <if test="additional_data != null">additional_data=#{additional_data}</if>,
+		      <if test="product_id != null">product_id=#{product_id}</if>,
+		      <if test="merchant_id != null">merchant_id=#{merchant_id}</if>,
+		      <if test="periode != null">periode=#{periode}</if>
+		    </set>
+		WHERE 
+			trxid = #{trxid_old}
+		AND
+			periode = #{periode}
+		AND
+			status = '02'
+		
+    </update>
+    
+    <update id="updateTxId0403" parameterType="hashmap">
+        UPDATE tb_trans 
+		    <set>
+		      TRANS_DT = DATE_FORMAT(NOW(),'%Y%m%d'), 
+	    	  TRANS_TM = DATE_FORMAT(NOW(),'%H%i%s'),
+		      <if test="trxid != null">trxid=#{trxid}</if>,
+		      <if test="status != null">status=#{status}</if>,
+		      <if test="retnum != null">retnum=#{retnum}</if>,
+		      <if test="customer_id != null">customer_id=#{customer_id}</if>,
+		      <if test="customer_name != null">customer_name=#{customer_name}</if>,
+		      <if test="customer_address != null">customer_address=#{customer_address}</if>,
+		      <if test="amount != null">amount=#{amount}</if>,
+		      <if test="fine != null">fine=#{fine}</if>,
+		      <if test="total != null">total=#{total}</if>,
+		      <if test="response != null">response=#{response}</if>,
+		      <if test="additional_data != null">additional_data=#{additional_data}</if>,
+		      <if test="product_id != null">product_id=#{product_id}</if>,
+		      <if test="merchant_id != null">merchant_id=#{merchant_id}</if>,
+		      <if test="periode != null">periode=#{periode}</if>
+		    </set>
+		WHERE 
+			trxid = #{trxid_old}
+		AND
+			periode = #{periode}
+		AND
+			status = '04'
+		
+    </update>
+    
+</mapper>

@@ -1,0 +1,394 @@
+2021-12-15 09:28:16.911[                 ]INFO [otMybatisApplication:648]No active profile set, falling back to default profiles: default
+2021-12-15 09:28:20.158[                 ]INFO [otMybatisApplication:59]Started SpringBootMybatisApplication in 6.782 seconds (JVM running for 7.775)
+2021-12-15 09:28:31.539[                 ]INFO [.SubcriberController:39][Scheaduler - ] Start Add Data
+2021-12-15 09:28:31.554[                 ]INFO [.SubcriberController:143][Scheaduler - ] Other Error
+2021-12-15 09:30:09.487[                 ]INFO [.SubcriberController:39][Scheaduler - ] Start Add Data
+2021-12-15 09:30:09.489[                 ]INFO [.SubcriberController:83][Scheaduler - ] Error Type to SMS
+2021-12-15 09:31:18.563[                 ]INFO [otMybatisApplication:648]No active profile set, falling back to default profiles: default
+2021-12-15 09:31:22.145[                 ]INFO [otMybatisApplication:59]Started SpringBootMybatisApplication in 7.228 seconds (JVM running for 8.454)
+2021-12-15 09:31:35.536[                 ]INFO [.SubcriberController:40][Scheaduler - ] Start Add Data
+2021-12-15 09:31:35.549[                 ]INFO [.SubcriberController:84][Scheaduler - ] Error Type to SMS
+2021-12-15 09:32:02.030[                 ]INFO [.SubcriberController:40][Scheaduler - ] Start Add Data
+2021-12-15 09:32:02.032[                 ]INFO [.SubcriberController:238][Scheaduler - ] insert to subcriber : {nama=pank, nohp=0838323241213, id=SUB20211215093202466738, tipe=EMAIL, email=irawan@gmail.com}
+2021-12-15 09:32:02.549[                 ]INFO [.SubcriberController:260][Scheaduler - ] insert to subcriber success.
+2021-12-15 09:32:02.557[                 ]INFO [.SubcriberController:110][Scheaduler - ] Success
+2021-12-15 09:32:40.096[                 ]INFO [otMybatisApplication:648]No active profile set, falling back to default profiles: default
+2021-12-15 09:32:44.073[                 ]INFO [otMybatisApplication:59]Started SpringBootMybatisApplication in 7.719 seconds (JVM running for 8.969)
+2021-12-15 09:32:44.173[                 ]INFO [.SubcriberController:158][Scheaduler - ] Start Get Data
+2021-12-15 09:32:44.569[                 ]INFO [.SubcriberController:173][Scheaduler - ] Success
+2021-12-15 09:33:10.129[                 ]INFO [.SubcriberController:40][Scheaduler - ] Start Add Data
+2021-12-15 09:33:10.130[                 ]INFO [.SubcriberController:90][Scheaduler - ] Error Type to Email
+2021-12-15 09:33:54.815[                 ]INFO [.SubcriberController:40][Scheaduler - ] Start Add Data
+2021-12-15 09:33:54.817[                 ]INFO [.SubcriberController:90][Scheaduler - ] Error Type to Email
+2021-12-15 09:35:09.748[                 ]INFO [otMybatisApplication:648]No active profile set, falling back to default profiles: default
+2021-12-15 09:35:13.243[                 ]INFO [otMybatisApplication:59]Started SpringBootMybatisApplication in 7.253 seconds (JVM running for 8.608)
+2021-12-15 09:37:50.352[                 ]INFO [.SubcriberController:40][Scheaduler - ] Start Add Data
+2021-12-15 09:37:50.365[                 ]INFO [.SubcriberController:90][Scheaduler - ] Error Type to Email
+2021-12-15 09:38:46.668[                 ]INFO [.SubcriberController:40][Scheaduler - ] Start Add Data
+2021-12-15 09:38:46.669[                 ]INFO [.SubcriberController:90][Scheaduler - ] Error Type to Email
+2021-12-15 09:49:52.320[                 ]INFO [otMybatisApplication:648]No active profile set, falling back to default profiles: default
+2021-12-15 09:49:55.741[                 ]INFO [otMybatisApplication:59]Started SpringBootMybatisApplication in 7.192 seconds (JVM running for 8.474)
+2021-12-15 09:50:08.782[                 ]INFO [.SubcriberController:39][Scheaduler - ] Start Add Data
+2021-12-15 09:50:08.789[                 ]INFO [.SubcriberController:89][Scheaduler - ] Error Type to Email
+2021-12-15 09:55:55.615[                 ]INFO [otMybatisApplication:648]No active profile set, falling back to default profiles: default
+2021-12-15 09:55:59.177[                 ]INFO [otMybatisApplication:59]Started SpringBootMybatisApplication in 7.312 seconds (JVM running for 8.503)
+2021-12-15 09:56:15.190[                 ]INFO [.SubcriberController:103][Scheaduler - ] Start Add Data
+2021-12-15 09:56:15.198[                 ]INFO [.SubcriberController:84][Scheaduler - ] Error Type to Email
+2021-12-15 09:57:07.366[                 ]INFO [.SubcriberController:103][Scheaduler - ] Start Add Data
+2021-12-15 09:57:11.363[                 ]INFO [.SubcriberController:84][Scheaduler - ] Error Type to Email
+2021-12-15 10:01:49.298[                 ]INFO [otMybatisApplication:50]Starting SpringBootMybatisApplication on DESKTOP-RKJ18PE with PID 7360 (E:\SWITCHING_PAPANG\Java\Scheduler\SchedulerSMSEmail\target\classes started by Mr Papang in E:\SWITCHING_PAPANG\Java\Scheduler\SchedulerSMSEmail)
+2021-12-15 10:01:49.305[                 ]INFO [otMybatisApplication:648]No active profile set, falling back to default profiles: default
+2021-12-15 10:03:17.862[                 ]INFO [otMybatisApplication:50]Starting SpringBootMybatisApplication on DESKTOP-RKJ18PE with PID 17956 (E:\SWITCHING_PAPANG\Java\Scheduler\SchedulerSMSEmail\target\classes started by Mr Papang in E:\SWITCHING_PAPANG\Java\Scheduler\SchedulerSMSEmail)
+2021-12-15 10:03:17.869[                 ]INFO [otMybatisApplication:648]No active profile set, falling back to default profiles: default
+2021-12-15 10:03:20.861[                 ]INFO [otMybatisApplication:59]Started SpringBootMybatisApplication in 3.506 seconds (JVM running for 4.533)
+2021-12-15 10:03:40.440[                 ]INFO [.SubcriberController:103][Scheaduler - ] Start Add Data
+2021-12-15 10:03:44.476[                 ]INFO [.SubcriberController:84][Scheaduler - ] Error Type to Email
+2021-12-15 10:07:02.600[                 ]INFO [otMybatisApplication:55]Starting SpringBootMybatisApplication on DESKTOP-RKJ18PE with PID 7612 (E:\SWITCHING_PAPANG\Java\Scheduler\SchedulerSMSEmail\target\classes started by Mr Papang in E:\SWITCHING_PAPANG\Java\Scheduler\SchedulerSMSEmail)
+2021-12-15 10:07:02.606[                 ]INFO [otMybatisApplication:651]No active profile set, falling back to default profiles: default
+2021-12-15 10:07:05.470[                 ]INFO [otMybatisApplication:61]Started SpringBootMybatisApplication in 3.392 seconds (JVM running for 4.51)
+2021-12-15 10:07:10.662[                 ]INFO [.SubcriberController:103][Scheaduler - ] Start Add Data
+2021-12-15 10:07:10.724[                 ]INFO [.SubcriberController:84][Scheaduler - ] Error Type to Email
+2021-12-15 12:56:09.213[                 ]INFO [otMybatisApplication:55]Starting SpringBootMybatisApplication on DESKTOP-RKJ18PE with PID 31880 (E:\SWITCHING_PAPANG\Java\Scheduler\SchedulerSMSEmail\target\classes started by Mr Papang in E:\SWITCHING_PAPANG\Java\Scheduler\SchedulerSMSEmail)
+2021-12-15 12:56:09.224[                 ]INFO [otMybatisApplication:651]No active profile set, falling back to default profiles: default
+2021-12-15 12:56:12.820[                 ]INFO [otMybatisApplication:61]Started SpringBootMybatisApplication in 4.288 seconds (JVM running for 5.623)
+2021-12-15 12:56:43.365[                 ]INFO [.SubcriberController:103][Scheaduler - ] Start Add Data
+2021-12-15 12:56:43.432[                 ]INFO [.SubcriberController:84][Scheaduler - ] Error Type to Email
+2021-12-15 12:56:57.667[                 ]INFO [.SubcriberController:103][Scheaduler - ] Start Add Data
+2021-12-15 12:56:57.669[                 ]INFO [.SubcriberController:84][Scheaduler - ] Error Type to Email
+2021-12-15 12:57:08.162[                 ]INFO [.SubcriberController:103][Scheaduler - ] Start Add Data
+2021-12-15 12:57:08.165[                 ]INFO [.SubcriberController:84][Scheaduler - ] Error Type to Email
+2021-12-15 12:57:17.367[                 ]INFO [otMybatisApplication:55]Starting SpringBootMybatisApplication on DESKTOP-RKJ18PE with PID 20580 (E:\SWITCHING_PAPANG\Java\Scheduler\SchedulerSMSEmail\target\classes started by Mr Papang in E:\SWITCHING_PAPANG\Java\Scheduler\SchedulerSMSEmail)
+2021-12-15 12:57:17.376[                 ]INFO [otMybatisApplication:651]No active profile set, falling back to default profiles: default
+2021-12-15 12:57:20.211[                 ]INFO [otMybatisApplication:61]Started SpringBootMybatisApplication in 3.409 seconds (JVM running for 4.624)
+2021-12-15 12:57:27.629[                 ]INFO [.SubcriberController:103][Scheaduler - ] Start Add Data
+2021-12-15 12:57:27.696[                 ]INFO [.SubcriberController:84][Scheaduler - ] Error Type to Email
+2021-12-15 12:59:33.975[                 ]INFO [otMybatisApplication:55]Starting SpringBootMybatisApplication on DESKTOP-RKJ18PE with PID 18968 (E:\SWITCHING_PAPANG\Java\Scheduler\SchedulerSMSEmail\target\classes started by Mr Papang in E:\SWITCHING_PAPANG\Java\Scheduler\SchedulerSMSEmail)
+2021-12-15 12:59:33.998[                 ]INFO [otMybatisApplication:651]No active profile set, falling back to default profiles: default
+2021-12-15 12:59:37.794[                 ]INFO [otMybatisApplication:61]Started SpringBootMybatisApplication in 4.638 seconds (JVM running for 5.9)
+2021-12-15 12:59:58.912[                 ]INFO [.SubcriberController:103][Scheaduler - ] Start Add Data
+2021-12-15 12:59:58.975[                 ]INFO [.SubcriberController:84][Scheaduler - ] Error Type to Email
+2021-12-15 13:01:03.030[                 ]INFO [otMybatisApplication:55]Starting SpringBootMybatisApplication on DESKTOP-RKJ18PE with PID 12408 (E:\SWITCHING_PAPANG\Java\Scheduler\SchedulerSMSEmail\target\classes started by Mr Papang in E:\SWITCHING_PAPANG\Java\Scheduler\SchedulerSMSEmail)
+2021-12-15 13:01:03.037[                 ]INFO [otMybatisApplication:651]No active profile set, falling back to default profiles: default
+2021-12-15 13:01:05.726[                 ]INFO [otMybatisApplication:61]Started SpringBootMybatisApplication in 3.213 seconds (JVM running for 4.294)
+2021-12-15 13:01:09.327[                 ]INFO [.SubcriberController:97][Scheaduler - ] Start Add Data
+2021-12-15 13:01:09.387[                 ]INFO [.SubcriberController:78][Scheaduler - ] Error Type to SMS and EMAIL
+2021-12-15 13:01:34.693[                 ]INFO [.SubcriberController:97][Scheaduler - ] Start Add Data
+2021-12-15 13:01:34.695[                 ]INFO [.SubcriberController:262][Scheaduler - ] insert to subcriber : {nama=pank, nohp=0838323241213, id=SUB20211215130134851837, tipe=SMS, email=irawan@gmail.com}
+2021-12-15 13:01:35.489[                 ]INFO [.SubcriberController:284][Scheaduler - ] insert to subcriber success.
+2021-12-15 13:01:35.495[                 ]INFO [.SubcriberController:129][Scheaduler - ] Success
+2021-12-15 13:02:17.348[                 ]INFO [.SubcriberController:97][Scheaduler - ] Start Add Data
+2021-12-15 13:02:17.350[                 ]INFO [.SubcriberController:78][Scheaduler - ] Error Type to SMS and EMAIL
+2021-12-15 13:02:21.529[                 ]INFO [.SubcriberController:97][Scheaduler - ] Start Add Data
+2021-12-15 13:02:21.530[                 ]INFO [.SubcriberController:78][Scheaduler - ] Error Type to SMS and EMAIL
+2021-12-15 13:02:33.001[                 ]INFO [.SubcriberController:97][Scheaduler - ] Start Add Data
+2021-12-15 13:02:33.002[                 ]INFO [.SubcriberController:78][Scheaduler - ] Error Type to SMS and EMAIL
+2021-12-15 13:02:40.680[                 ]INFO [.SubcriberController:97][Scheaduler - ] Start Add Data
+2021-12-15 13:02:40.681[                 ]INFO [.SubcriberController:78][Scheaduler - ] Error Type to SMS and EMAIL
+2021-12-15 13:03:00.354[                 ]INFO [otMybatisApplication:55]Starting SpringBootMybatisApplication on DESKTOP-RKJ18PE with PID 31924 (E:\SWITCHING_PAPANG\Java\Scheduler\SchedulerSMSEmail\target\classes started by Mr Papang in E:\SWITCHING_PAPANG\Java\Scheduler\SchedulerSMSEmail)
+2021-12-15 13:03:00.360[                 ]INFO [otMybatisApplication:651]No active profile set, falling back to default profiles: default
+2021-12-15 13:03:03.405[                 ]INFO [otMybatisApplication:61]Started SpringBootMybatisApplication in 3.591 seconds (JVM running for 4.76)
+2021-12-15 13:03:58.983[                 ]INFO [otMybatisApplication:55]Starting SpringBootMybatisApplication on DESKTOP-RKJ18PE with PID 19032 (E:\SWITCHING_PAPANG\Java\Scheduler\SchedulerSMSEmail\target\classes started by Mr Papang in E:\SWITCHING_PAPANG\Java\Scheduler\SchedulerSMSEmail)
+2021-12-15 13:03:58.989[                 ]INFO [otMybatisApplication:651]No active profile set, falling back to default profiles: default
+2021-12-15 13:04:01.734[                 ]INFO [otMybatisApplication:61]Started SpringBootMybatisApplication in 3.328 seconds (JVM running for 4.408)
+2021-12-15 13:04:14.094[                 ]INFO [.SubcriberController:97][Scheaduler - ] Start Add Data
+2021-12-15 13:04:14.147[                 ]INFO [.SubcriberController:78][Scheaduler - ] Error Type to SMS and EMAIL
+2021-12-15 13:04:26.345[                 ]INFO [.SubcriberController:182][Scheaduler - ] Start Get Data
+2021-12-15 13:04:26.689[                 ]INFO [.SubcriberController:197][Scheaduler - ] Success
+2021-12-15 13:04:33.301[                 ]INFO [.SubcriberController:182][Scheaduler - ] Start Get Data
+2021-12-15 13:04:33.305[                 ]INFO [.SubcriberController:197][Scheaduler - ] Success
+2021-12-15 13:04:52.946[                 ]INFO [.SubcriberController:182][Scheaduler - ] Start Get Data
+2021-12-15 13:04:52.954[                 ]INFO [.SubcriberController:197][Scheaduler - ] Success
+2021-12-15 13:04:52.958[                 ]INFO [.SubcriberController:215][Scheaduler - ] Other Error
+2021-12-15 13:05:04.378[                 ]INFO [.SubcriberController:182][Scheaduler - ] Start Get Data
+2021-12-15 13:05:04.381[                 ]INFO [.SubcriberController:197][Scheaduler - ] Success
+2021-12-15 13:05:04.384[                 ]INFO [.SubcriberController:215][Scheaduler - ] Other Error
+2021-12-15 13:05:13.972[                 ]INFO [.SubcriberController:182][Scheaduler - ] Start Get Data
+2021-12-15 13:05:13.973[                 ]INFO [.SubcriberController:197][Scheaduler - ] Success
+2021-12-15 13:05:13.975[                 ]INFO [.SubcriberController:215][Scheaduler - ] Other Error
+2021-12-15 13:07:28.055[                 ]INFO [otMybatisApplication:55]Starting SpringBootMybatisApplication on DESKTOP-RKJ18PE with PID 3036 (E:\SWITCHING_PAPANG\Java\Scheduler\SchedulerSMSEmail\target\classes started by Mr Papang in E:\SWITCHING_PAPANG\Java\Scheduler\SchedulerSMSEmail)
+2021-12-15 13:07:28.063[                 ]INFO [otMybatisApplication:651]No active profile set, falling back to default profiles: default
+2021-12-15 13:07:30.801[                 ]INFO [otMybatisApplication:61]Started SpringBootMybatisApplication in 3.273 seconds (JVM running for 4.387)
+2021-12-15 13:07:36.096[                 ]INFO [.SubcriberController:182][Scheaduler - ] Start Get Data
+2021-12-15 13:07:42.205[                 ]INFO [.SubcriberController:182][Scheaduler - ] Start Get Data
+2021-12-15 13:07:42.216[                 ]INFO [.SubcriberController:199][Scheaduler - ] Success
+2021-12-15 13:08:07.098[                 ]INFO [.SubcriberController:97][Scheaduler - ] Start Add Data
+2021-12-15 13:08:07.100[                 ]INFO [.SubcriberController:78][Scheaduler - ] Error Type to SMS and EMAIL
+2021-12-15 13:15:08.302[                 ]INFO [.SubcriberController:97][Scheaduler - ] Start Add Data
+2021-12-15 13:15:08.303[                 ]INFO [.SubcriberController:78][Scheaduler - ] Error Type to SMS and EMAIL
+2021-12-15 13:15:12.757[                 ]INFO [.SubcriberController:97][Scheaduler - ] Start Add Data
+2021-12-15 13:16:02.469[                 ]INFO [.SubcriberController:281][Scheaduler - ] insert to subcriber : {nama=irawan, nohp=0838323241213, id=SUB20211215131602636501, tipe=sms, email=irawan@gmail.com}
+2021-12-15 13:16:02.524[                 ]INFO [.SubcriberController:303][Scheaduler - ] insert to subcriber success.
+2021-12-15 13:16:02.540[                 ]INFO [.SubcriberController:129][Scheaduler - ] Success
+2021-12-15 13:16:09.715[                 ]INFO [.SubcriberController:97][Scheaduler - ] Start Add Data
+2021-12-15 13:16:15.083[                 ]INFO [.SubcriberController:78][Scheaduler - ] Error Type to SMS and EMAIL
+2021-12-15 13:16:51.441[                 ]INFO [otMybatisApplication:55]Starting SpringBootMybatisApplication on DESKTOP-RKJ18PE with PID 32480 (E:\SWITCHING_PAPANG\Java\Scheduler\SchedulerSMSEmail\target\classes started by Mr Papang in E:\SWITCHING_PAPANG\Java\Scheduler\SchedulerSMSEmail)
+2021-12-15 13:16:51.447[                 ]INFO [otMybatisApplication:651]No active profile set, falling back to default profiles: default
+2021-12-15 13:16:54.189[                 ]INFO [otMybatisApplication:61]Started SpringBootMybatisApplication in 3.296 seconds (JVM running for 4.404)
+2021-12-15 13:16:58.455[                 ]INFO [.SubcriberController:97][Scheaduler - ] Start Add Data
+2021-12-15 13:16:58.515[                 ]INFO [.SubcriberController:281][Scheaduler - ] insert to subcriber : {nama=irawan, nohp=0838323241213, id=SUB20211215131658806200, tipe=SMS, email=irawan@gmail.com}
+2021-12-15 13:16:58.910[                 ]INFO [.SubcriberController:303][Scheaduler - ] insert to subcriber success.
+2021-12-15 13:16:58.918[                 ]INFO [.SubcriberController:129][Scheaduler - ] Success
+2021-12-15 13:17:04.076[                 ]INFO [.SubcriberController:182][Scheaduler - ] Start Get Data
+2021-12-15 13:17:04.085[                 ]INFO [.SubcriberController:199][Scheaduler - ] Success
+2021-12-15 13:17:07.645[                 ]INFO [.SubcriberController:97][Scheaduler - ] Start Add Data
+2021-12-15 13:17:07.647[                 ]INFO [.SubcriberController:281][Scheaduler - ] insert to subcriber : {nama=irawan, nohp=0838323241213, id=SUB20211215131707226835, tipe=SMS, email=irawan@gmail.com}
+2021-12-15 13:17:07.675[                 ]INFO [.SubcriberController:303][Scheaduler - ] insert to subcriber success.
+2021-12-15 13:17:07.677[                 ]INFO [.SubcriberController:129][Scheaduler - ] Success
+2021-12-15 13:17:12.669[                 ]INFO [.SubcriberController:182][Scheaduler - ] Start Get Data
+2021-12-15 13:17:12.670[                 ]INFO [.SubcriberController:199][Scheaduler - ] Success
+2021-12-15 13:17:49.354[                 ]INFO [.SubcriberController:97][Scheaduler - ] Start Add Data
+2021-12-15 13:17:49.356[                 ]INFO [.SubcriberController:281][Scheaduler - ] insert to subcriber : {nama=irawan papang subakti, nohp=0838323241213, id=SUB20211215131749170686, tipe=SMS, email=ips@gmail.com}
+2021-12-15 13:17:49.372[                 ]INFO [.SubcriberController:303][Scheaduler - ] insert to subcriber success.
+2021-12-15 13:17:49.374[                 ]INFO [.SubcriberController:129][Scheaduler - ] Success
+2021-12-15 13:17:56.260[                 ]INFO [.SubcriberController:182][Scheaduler - ] Start Get Data
+2021-12-15 13:17:56.262[                 ]INFO [.SubcriberController:199][Scheaduler - ] Success
+2021-12-15 13:18:20.317[                 ]INFO [.SubcriberController:97][Scheaduler - ] Start Add Data
+2021-12-15 13:18:20.318[                 ]INFO [.SubcriberController:281][Scheaduler - ] insert to subcriber : {nama=Adi Nug, nohp=0838323241213, id=SUB20211215131820166222, tipe=EMAIL, email=Adi@gmail.com}
+2021-12-15 13:18:20.354[                 ]INFO [.SubcriberController:303][Scheaduler - ] insert to subcriber success.
+2021-12-15 13:18:20.355[                 ]INFO [.SubcriberController:129][Scheaduler - ] Success
+2021-12-15 13:18:26.390[                 ]INFO [.SubcriberController:182][Scheaduler - ] Start Get Data
+2021-12-15 13:18:26.392[                 ]INFO [.SubcriberController:199][Scheaduler - ] Success
+2021-12-15 14:56:14.991[                 ]INFO [otMybatisApplication:55]Starting SpringBootMybatisApplication on DESKTOP-RKJ18PE with PID 17040 (E:\SWITCHING_PAPANG\Java\Scheduler\SchedulerSMSEmail\target\classes started by Mr Papang in E:\SWITCHING_PAPANG\Java\Scheduler\SchedulerSMSEmail)
+2021-12-15 14:56:15.018[                 ]INFO [otMybatisApplication:651]No active profile set, falling back to default profiles: default
+2021-12-15 14:56:18.337[                 ]INFO [otMybatisApplication:61]Started SpringBootMybatisApplication in 3.882 seconds (JVM running for 5.374)
+2021-12-15 14:57:27.428[                 ]INFO [.SubcriberController:182][Scheaduler - ] Start Get Data
+2021-12-15 14:57:28.221[                 ]INFO [.SubcriberController:199][Scheaduler - ] Success
+2021-12-15 14:57:41.849[                 ]INFO [.SubcriberController:97][Scheaduler - ] Start Add Data
+2021-12-15 14:57:41.851[                 ]INFO [.SubcriberController:281][Scheaduler - ] insert to subcriber : {nama=Anja An, nohp=0838323241213, id=SUB20211215145741698869, tipe=EMAIL, email=Anja@gmail.com}
+2021-12-15 14:57:41.977[                 ]INFO [.SubcriberController:303][Scheaduler - ] insert to subcriber success.
+2021-12-15 14:57:41.980[                 ]INFO [.SubcriberController:129][Scheaduler - ] Success
+2021-12-15 14:57:48.762[                 ]INFO [.SubcriberController:182][Scheaduler - ] Start Get Data
+2021-12-15 14:57:48.785[                 ]INFO [.SubcriberController:199][Scheaduler - ] Success
+2021-12-15 14:57:59.415[                 ]INFO [.SubcriberController:182][Scheaduler - ] Start Get Data
+2021-12-15 14:58:11.696[                 ]INFO [.SubcriberController:97][Scheaduler - ] Start Add Data
+2021-12-15 14:58:11.697[                 ]INFO [.SubcriberController:46][Scheaduler - ] Error Nama
+2021-12-15 14:59:48.919[                 ]INFO [otMybatisApplication:55]Starting SpringBootMybatisApplication on DESKTOP-RKJ18PE with PID 444 (E:\SWITCHING_PAPANG\Java\Scheduler\SchedulerSMSEmail\target\classes started by Mr Papang in E:\SWITCHING_PAPANG\Java\Scheduler\SchedulerSMSEmail)
+2021-12-15 14:59:48.925[                 ]INFO [otMybatisApplication:651]No active profile set, falling back to default profiles: default
+2021-12-15 14:59:51.626[                 ]INFO [otMybatisApplication:61]Started SpringBootMybatisApplication in 3.253 seconds (JVM running for 4.331)
+2021-12-15 15:09:08.327[                 ]INFO [otMybatisApplication:55]Starting SpringBootMybatisApplication on DESKTOP-RKJ18PE with PID 4316 (E:\SWITCHING_PAPANG\Java\Scheduler\SchedulerSMSEmail\target\classes started by Mr Papang in E:\SWITCHING_PAPANG\Java\Scheduler\SchedulerSMSEmail)
+2021-12-15 15:09:08.334[                 ]INFO [otMybatisApplication:651]No active profile set, falling back to default profiles: default
+2021-12-15 15:09:11.233[                 ]INFO [otMybatisApplication:61]Started SpringBootMybatisApplication in 3.41 seconds (JVM running for 4.476)
+2021-12-15 15:09:16.766[                 ]INFO [.SubcriberController:182][Scheaduler - ] Start Get Data
+2021-12-15 15:09:17.231[                 ]INFO [.SubcriberController:199][Scheaduler - ] Success
+2021-12-15 15:09:30.983[                 ]INFO [.SubcriberController:251][Scheaduler - ] Start Update Data
+2021-12-15 15:09:30.985[                 ]INFO [.SubcriberController:405][Scheaduler - ] update to subcriber : {nama=Anja An asdfasdas, nohp=0838323241213, id=SUB20211215145741698869, tipe=EMAIL, email=Anja@gmail.com}
+2021-12-15 15:09:30.987[                 ]INFO [.SubcriberController:426][Scheaduler - ] update to subcriber success.
+2021-12-15 15:09:30.993[                 ]INFO [.SubcriberController:283][Scheaduler - ] Success
+2021-12-15 15:09:42.286[                 ]INFO [.SubcriberController:182][Scheaduler - ] Start Get Data
+2021-12-15 15:09:42.287[                 ]INFO [.SubcriberController:199][Scheaduler - ] Success
+2021-12-15 15:10:56.912[                 ]INFO [.SubcriberController:251][Scheaduler - ] Start Update Data
+2021-12-15 15:11:01.574[                 ]INFO [.SubcriberController:405][Scheaduler - ] update to subcriber : {nama=Anja An asdfasdas, nohp=0838323241213, id=SUB20211215145741698869, tipe=EMAIL, email=Anja@gmail.com}
+2021-12-15 15:11:01.589[                 ]INFO [.SubcriberController:426][Scheaduler - ] update to subcriber success.
+2021-12-15 15:11:14.450[                 ]INFO [.SubcriberController:283][Scheaduler - ] Success
+2021-12-15 15:11:17.649[                 ]INFO [.SubcriberController:251][Scheaduler - ] Start Update Data
+2021-12-15 15:11:19.993[                 ]INFO [.SubcriberController:405][Scheaduler - ] update to subcriber : {nama=Anja An asdfasdas, nohp=0838323241213, id=SUB20211215145741698869, tipe=EMAIL, email=Anja@gmail.com}
+2021-12-15 15:11:19.994[                 ]INFO [.SubcriberController:426][Scheaduler - ] update to subcriber success.
+2021-12-15 15:11:19.995[                 ]INFO [.SubcriberController:283][Scheaduler - ] Success
+2021-12-15 15:15:15.984[                 ]INFO [otMybatisApplication:55]Starting SpringBootMybatisApplication on DESKTOP-RKJ18PE with PID 4384 (E:\SWITCHING_PAPANG\Java\Scheduler\SchedulerSMSEmail\target\classes started by Mr Papang in E:\SWITCHING_PAPANG\Java\Scheduler\SchedulerSMSEmail)
+2021-12-15 15:15:15.992[                 ]INFO [otMybatisApplication:651]No active profile set, falling back to default profiles: default
+2021-12-15 15:15:18.591[                 ]INFO [otMybatisApplication:61]Started SpringBootMybatisApplication in 3.143 seconds (JVM running for 4.189)
+2021-12-15 15:15:27.783[                 ]INFO [.SubcriberController:251][Scheaduler - ] Start Update Data
+2021-12-15 15:15:27.839[                 ]INFO [.SubcriberController:405][Scheaduler - ] update to subcriber : {nama=Anja An asdfasdas, nohp=0838323241213, id=SUB20211215145741698869, tipe=EMAIL, email=Anja@gmail.com}
+2021-12-15 15:15:28.220[                 ]INFO [.SubcriberController:426][Scheaduler - ] update to subcriber success.
+2021-12-15 15:15:28.222[                 ]INFO [.SubcriberController:283][Scheaduler - ] Success
+2021-12-15 15:16:08.421[                 ]INFO [.SubcriberController:251][Scheaduler - ] Start Update Data
+2021-12-15 15:16:08.422[                 ]INFO [.SubcriberController:405][Scheaduler - ] update to subcriber : {nama=Anja An asdfasdas, nohp=0838323241213, id=SUB20211215145741698869, tipe=EMAIL, email=Anja@gmail.com}
+2021-12-15 15:16:08.426[                 ]INFO [.SubcriberController:426][Scheaduler - ] update to subcriber success.
+2021-12-15 15:16:08.427[                 ]INFO [.SubcriberController:283][Scheaduler - ] Success
+2021-12-15 15:16:16.928[                 ]INFO [.SubcriberController:251][Scheaduler - ] Start Update Data
+2021-12-15 15:16:16.929[                 ]INFO [.SubcriberController:405][Scheaduler - ] update to subcriber : {nama=Anja An asdfasdas, nohp=0838323241213, id=SUB20211215145741698869, tipe=EMAIL, email=Anja@gmail.com}
+2021-12-15 15:16:35.244[                 ]INFO [.SubcriberController:405][Scheaduler - ] update to subcriber : {nama=Anja An asdfasdas, nohp=0838323241213, id=SUB20211215145741698869, tipe=EMAIL, email=Anja@gmail.com}
+2021-12-15 15:16:44.802[                 ]INFO [.SubcriberController:431][Scheaduler - ] update to subcriber fail
+2021-12-15 15:16:44.820[                 ]INFO [.SubcriberController:301][Scheaduler - ] Error when update table subcriber.
+2021-12-15 15:16:54.082[                 ]INFO [.SubcriberController:251][Scheaduler - ] Start Update Data
+2021-12-15 15:16:54.083[                 ]INFO [.SubcriberController:405][Scheaduler - ] update to subcriber : {nama=Anja An asdfasdas, nohp=0838323241213, id=SUB20211215145741698869, tipe=EMAIL, email=Anja@gmail.com}
+2021-12-15 15:17:22.765[                 ]INFO [.SubcriberController:431][Scheaduler - ] update to subcriber fail
+2021-12-15 15:17:22.776[                 ]INFO [.SubcriberController:301][Scheaduler - ] Error when update table subcriber.
+2021-12-15 15:17:24.989[                 ]INFO [.SubcriberController:251][Scheaduler - ] Start Update Data
+2021-12-15 15:17:24.990[                 ]INFO [.SubcriberController:405][Scheaduler - ] update to subcriber : {nama=Anja An asdfasdas, nohp=0838323241213, id=SUB20211215145741698869, tipe=EMAIL, email=Anja@gmail.com}
+2021-12-15 15:17:51.147[                 ]INFO [otMybatisApplication:55]Starting SpringBootMybatisApplication on DESKTOP-RKJ18PE with PID 14500 (E:\SWITCHING_PAPANG\Java\Scheduler\SchedulerSMSEmail\target\classes started by Mr Papang in E:\SWITCHING_PAPANG\Java\Scheduler\SchedulerSMSEmail)
+2021-12-15 15:17:51.153[                 ]INFO [otMybatisApplication:651]No active profile set, falling back to default profiles: default
+2021-12-15 15:17:53.797[                 ]INFO [otMybatisApplication:61]Started SpringBootMybatisApplication in 3.136 seconds (JVM running for 4.175)
+2021-12-15 15:17:57.629[                 ]INFO [.SubcriberController:251][Scheaduler - ] Start Update Data
+2021-12-15 15:17:57.687[                 ]INFO [.SubcriberController:405][Scheaduler - ] update to subcriber : {nama=Anja An asdfasdas, nohp=0838323241213, id=SUB20211215145741698869, tipe=EMAIL, email=Anja@gmail.com}
+2021-12-15 15:18:04.375[                 ]INFO [.SubcriberController:426][Scheaduler - ] update to subcriber success.
+2021-12-15 15:18:04.379[                 ]INFO [.SubcriberController:283][Scheaduler - ] Success
+2021-12-15 15:18:19.493[                 ]INFO [.SubcriberController:251][Scheaduler - ] Start Update Data
+2021-12-15 15:18:19.494[                 ]INFO [.SubcriberController:405][Scheaduler - ] update to subcriber : {nama=TEFSF, nohp=0838323241213, id=SUB20211215145741698869, tipe=EMAIL, email=Anja@gmail.com}
+2021-12-15 15:18:23.248[                 ]INFO [.SubcriberController:426][Scheaduler - ] update to subcriber success.
+2021-12-15 15:18:23.250[                 ]INFO [.SubcriberController:283][Scheaduler - ] Success
+2021-12-15 15:18:32.347[                 ]INFO [.SubcriberController:251][Scheaduler - ] Start Update Data
+2021-12-15 15:18:32.348[                 ]INFO [.SubcriberController:405][Scheaduler - ] update to subcriber : {nama=TEFSF, nohp=0838323241213, id=adeawe, tipe=EMAIL, email=Anja@gmail.com}
+2021-12-15 15:18:32.349[                 ]INFO [.SubcriberController:426][Scheaduler - ] update to subcriber success.
+2021-12-15 15:18:32.350[                 ]INFO [.SubcriberController:277][Scheaduler - ] Error Data is null
+2021-12-15 15:19:55.614[                 ]INFO [.SubcriberController:251][Scheaduler - ] Start Update Data
+2021-12-15 15:19:55.615[                 ]INFO [.SubcriberController:405][Scheaduler - ] update to subcriber : {nama=TEFSF, nohp=0838323241213, id=SUB20211215145741698869, tipe=EMAIL, email=Anja@gmail.com}
+2021-12-15 15:19:55.650[                 ]INFO [.SubcriberController:426][Scheaduler - ] update to subcriber success.
+2021-12-15 15:19:55.653[                 ]INFO [.SubcriberController:283][Scheaduler - ] Success
+2021-12-15 15:20:02.576[                 ]INFO [.SubcriberController:251][Scheaduler - ] Start Update Data
+2021-12-15 15:20:02.579[                 ]INFO [.SubcriberController:405][Scheaduler - ] update to subcriber : {nama=TEFSF, nohp=0838323241213, id=SUB2021121514574169886, tipe=EMAIL, email=Anja@gmail.com}
+2021-12-15 15:20:02.583[                 ]INFO [.SubcriberController:426][Scheaduler - ] update to subcriber success.
+2021-12-15 15:20:02.585[                 ]INFO [.SubcriberController:277][Scheaduler - ] Error Data is null
+2021-12-15 15:21:26.421[                 ]INFO [.SubcriberController:251][Scheaduler - ] Start Update Data
+2021-12-15 15:21:26.423[                 ]INFO [.SubcriberController:405][Scheaduler - ] update to subcriber : {nama=TEFSF, nohp=0838323241213, id=SUB2021121514574169886, tipe=EMAIL, email=Anja@gmail.com}
+2021-12-15 15:22:01.075[                 ]INFO [.SubcriberController:405][Scheaduler - ] update to subcriber : {nama=TEFSF, nohp=0838323241213, id=SUB2021121514574169886, tipe=EMAIL, email=Anja@gmail.com}
+2021-12-15 15:22:01.077[                 ]INFO [.SubcriberController:426][Scheaduler - ] update to subcriber success.
+2021-12-15 15:22:01.079[                 ]INFO [.SubcriberController:277][Scheaduler - ] Error Data is null
+2021-12-15 15:22:16.035[                 ]INFO [.SubcriberController:251][Scheaduler - ] Start Update Data
+2021-12-15 15:22:16.037[                 ]INFO [.SubcriberController:405][Scheaduler - ] update to subcriber : {nama=TEFSF, nohp=13134, id=SUB20211215145741698869, tipe=EMAIL, email=Anja@gmail.com}
+2021-12-15 15:22:16.084[                 ]INFO [.SubcriberController:426][Scheaduler - ] update to subcriber success.
+2021-12-15 15:22:16.087[                 ]INFO [.SubcriberController:283][Scheaduler - ] Success
+2021-12-15 15:22:29.960[                 ]INFO [.SubcriberController:251][Scheaduler - ] Start Update Data
+2021-12-15 15:22:29.962[                 ]INFO [.SubcriberController:405][Scheaduler - ] update to subcriber : {nama=TEFSF, nohp=13134, id=SUB20211215145741698869, tipe=SMS, email=Anja@gmail.com}
+2021-12-15 15:22:30.000[                 ]INFO [.SubcriberController:426][Scheaduler - ] update to subcriber success.
+2021-12-15 15:22:30.001[                 ]INFO [.SubcriberController:283][Scheaduler - ] Success
+2021-12-15 15:26:46.289[                 ]INFO [otMybatisApplication:55]Starting SpringBootMybatisApplication on DESKTOP-RKJ18PE with PID 32240 (E:\SWITCHING_PAPANG\Java\Scheduler\SchedulerSMSEmail\target\classes started by Mr Papang in E:\SWITCHING_PAPANG\Java\Scheduler\SchedulerSMSEmail)
+2021-12-15 15:26:46.298[                 ]INFO [otMybatisApplication:651]No active profile set, falling back to default profiles: default
+2021-12-15 15:26:48.986[                 ]INFO [otMybatisApplication:61]Started SpringBootMybatisApplication in 3.235 seconds (JVM running for 4.265)
+2021-12-15 15:27:05.608[                 ]INFO [.SubcriberController:243][Scheaduler - ] Start Delete Data
+2021-12-15 15:29:07.533[                 ]INFO [otMybatisApplication:55]Starting SpringBootMybatisApplication on DESKTOP-RKJ18PE with PID 31668 (E:\SWITCHING_PAPANG\Java\Scheduler\SchedulerSMSEmail\target\classes started by Mr Papang in E:\SWITCHING_PAPANG\Java\Scheduler\SchedulerSMSEmail)
+2021-12-15 15:29:07.539[                 ]INFO [otMybatisApplication:651]No active profile set, falling back to default profiles: default
+2021-12-15 15:29:10.248[                 ]INFO [otMybatisApplication:61]Started SpringBootMybatisApplication in 3.231 seconds (JVM running for 4.295)
+2021-12-15 15:29:15.321[                 ]INFO [.SubcriberController:243][Scheaduler - ] Start Delete Data
+2021-12-15 15:29:15.382[                 ]INFO [.SubcriberController:527][Scheaduler - ] delete to subcriber : {nama=TEFSF, nohp=13134, id=SUB20211215145741698869, tipe=SMS, email=Anja@gmail.com}
+2021-12-15 15:29:15.897[                 ]INFO [.SubcriberController:549][Scheaduler - ] delete to subcriber fail
+2021-12-15 15:29:15.901[                 ]INFO [.SubcriberController:293][Scheaduler - ] Error when update table subcriber.
+2021-12-15 15:29:42.913[                 ]INFO [otMybatisApplication:55]Starting SpringBootMybatisApplication on DESKTOP-RKJ18PE with PID 3332 (E:\SWITCHING_PAPANG\Java\Scheduler\SchedulerSMSEmail\target\classes started by Mr Papang in E:\SWITCHING_PAPANG\Java\Scheduler\SchedulerSMSEmail)
+2021-12-15 15:29:42.919[                 ]INFO [otMybatisApplication:651]No active profile set, falling back to default profiles: default
+2021-12-15 15:29:45.629[                 ]INFO [otMybatisApplication:61]Started SpringBootMybatisApplication in 3.227 seconds (JVM running for 4.249)
+2021-12-15 15:30:10.792[                 ]INFO [.SubcriberController:243][Scheaduler - ] Start Delete Data
+2021-12-15 15:30:10.850[                 ]INFO [.SubcriberController:527][Scheaduler - ] delete to subcriber : {nama=TEFSF, nohp=13134, id=SUB20211215145741698869, tipe=SMS, email=Anja@gmail.com}
+2021-12-15 15:30:11.308[                 ]INFO [.SubcriberController:544][Scheaduler - ] delete to subcriber success.
+2021-12-15 15:30:11.319[                 ]INFO [.SubcriberController:269][Scheaduler - ] Error Data is null
+2021-12-15 15:31:41.740[                 ]INFO [otMybatisApplication:55]Starting SpringBootMybatisApplication on DESKTOP-RKJ18PE with PID 22508 (E:\SWITCHING_PAPANG\Java\Scheduler\SchedulerSMSEmail\target\classes started by Mr Papang in E:\SWITCHING_PAPANG\Java\Scheduler\SchedulerSMSEmail)
+2021-12-15 15:31:41.747[                 ]INFO [otMybatisApplication:651]No active profile set, falling back to default profiles: default
+2021-12-15 15:31:44.473[                 ]INFO [otMybatisApplication:61]Started SpringBootMybatisApplication in 3.333 seconds (JVM running for 4.417)
+2021-12-15 15:31:49.755[                 ]INFO [.SubcriberController:97][Scheaduler - ] Start Add Data
+2021-12-15 15:31:49.819[                 ]INFO [.SubcriberController:421][Scheaduler - ] insert to subcriber : {nama=Anja An, nohp=0838323241213, id=SUB20211215153149772193, tipe=EMAIL, email=Anja@gmail.com}
+2021-12-15 15:31:50.229[                 ]INFO [.SubcriberController:443][Scheaduler - ] insert to subcriber success.
+2021-12-15 15:31:50.235[                 ]INFO [.SubcriberController:129][Scheaduler - ] Success
+2021-12-15 15:31:55.621[                 ]INFO [.SubcriberController:182][Scheaduler - ] Start Get Data
+2021-12-15 15:31:55.628[                 ]INFO [.SubcriberController:199][Scheaduler - ] Success
+2021-12-15 15:32:10.795[                 ]INFO [.SubcriberController:316][Scheaduler - ] Start Update Data
+2021-12-15 15:32:10.796[                 ]INFO [.SubcriberController:468][Scheaduler - ] update to subcriber : {nama=Anja An TES, nohp=0838323241213, id=SUB20211215153149772193, tipe=EMAIL, email=Anja@gmail.com}
+2021-12-15 15:32:10.854[                 ]INFO [.SubcriberController:489][Scheaduler - ] update to subcriber success.
+2021-12-15 15:32:10.855[                 ]INFO [.SubcriberController:348][Scheaduler - ] Success
+2021-12-15 15:32:23.911[                 ]INFO [.SubcriberController:243][Scheaduler - ] Start Delete Data
+2021-12-15 15:32:23.912[                 ]INFO [.SubcriberController:514][Scheaduler - ] delete to subcriber : {nama=Anja An, nohp=0838323241213, id=SUB20211215153149772193, tipe=EMAIL, email=Anja@gmail.com}
+2021-12-15 15:32:23.947[                 ]INFO [.SubcriberController:531][Scheaduler - ] delete to subcriber success.
+2021-12-15 15:32:23.948[                 ]INFO [.SubcriberController:265][Scheaduler - ] Success
+2021-12-15 15:34:17.050[                 ]INFO [otMybatisApplication:55]Starting SpringBootMybatisApplication on DESKTOP-RKJ18PE with PID 25868 (E:\SWITCHING_PAPANG\Java\Scheduler\SchedulerSMSEmail\target\classes started by Mr Papang in E:\SWITCHING_PAPANG\Java\Scheduler\SchedulerSMSEmail)
+2021-12-15 15:34:17.057[                 ]INFO [otMybatisApplication:651]No active profile set, falling back to default profiles: default
+2021-12-15 15:34:19.716[                 ]INFO [otMybatisApplication:61]Started SpringBootMybatisApplication in 3.183 seconds (JVM running for 4.23)
+2021-12-15 15:34:40.332[                 ]INFO [otMybatisApplication:55]Starting SpringBootMybatisApplication on DESKTOP-RKJ18PE with PID 14040 (E:\SWITCHING_PAPANG\Java\Scheduler\SchedulerSMSEmail\target\classes started by Mr Papang in E:\SWITCHING_PAPANG\Java\Scheduler\SchedulerSMSEmail)
+2021-12-15 15:34:40.337[                 ]INFO [otMybatisApplication:651]No active profile set, falling back to default profiles: default
+2021-12-15 15:34:42.943[                 ]INFO [otMybatisApplication:61]Started SpringBootMybatisApplication in 3.124 seconds (JVM running for 4.162)
+2021-12-15 15:35:26.639[                 ]INFO [.SubcriberController:97][Scheaduler - ] Start Add Data
+2021-12-15 15:35:26.703[                 ]INFO [.SubcriberController:414][Scheaduler - ] insert to subcriber : {nama=Anja An, nohp=0838323241213, id=SUB20211215153526099215, tipe=EMAIL, email=Anja@gmail.com}
+2021-12-15 15:35:27.117[                 ]INFO [.SubcriberController:436][Scheaduler - ] insert to subcriber success.
+2021-12-15 15:35:27.128[                 ]INFO [.SubcriberController:129][Scheaduler - ] Success
+2021-12-15 15:35:31.138[                 ]INFO [.SubcriberController:182][Scheaduler - ] Start Get Data
+2021-12-15 15:35:31.147[                 ]INFO [.SubcriberController:199][Scheaduler - ] Success
+2021-12-15 15:35:36.200[                 ]INFO [.SubcriberController:309][Scheaduler - ] Start Update Data
+2021-12-15 15:35:36.201[                 ]INFO [.SubcriberController:461][Scheaduler - ] update to subcriber : {nama=Anja An TES, nohp=0838323241213, id=SUB20211215153526099215, tipe=EMAIL, email=Anja@gmail.com}
+2021-12-15 15:35:36.270[                 ]INFO [.SubcriberController:482][Scheaduler - ] update to subcriber success.
+2021-12-15 15:35:36.272[                 ]INFO [.SubcriberController:341][Scheaduler - ] Success
+2021-12-15 15:35:43.321[                 ]INFO [.SubcriberController:243][Scheaduler - ] Start Delete Data
+2021-12-15 15:37:38.879[                 ]INFO [otMybatisApplication:55]Starting SpringBootMybatisApplication on DESKTOP-RKJ18PE with PID 20276 (E:\SWITCHING_PAPANG\Java\Scheduler\SchedulerSMSEmail\target\classes started by Mr Papang in E:\SWITCHING_PAPANG\Java\Scheduler\SchedulerSMSEmail)
+2021-12-15 15:37:38.887[                 ]INFO [otMybatisApplication:651]No active profile set, falling back to default profiles: default
+2021-12-15 15:37:41.520[                 ]INFO [otMybatisApplication:61]Started SpringBootMybatisApplication in 3.158 seconds (JVM running for 4.215)
+2021-12-15 15:38:14.595[                 ]INFO [.SubcriberController:274][Scheaduler - ] Start Delete Data
+2021-12-15 15:38:14.698[                 ]INFO [.SubcriberController:533][Scheaduler - ] delete to subcriber : {nama=Anja An, id=SUB20211215153526099215}
+2021-12-15 15:38:15.075[                 ]INFO [.SubcriberController:550][Scheaduler - ] delete to subcriber success.
+2021-12-15 15:38:15.075[                 ]INFO [.SubcriberController:296][Scheaduler - ] Success
+2021-12-15 15:43:35.678[                 ]INFO [otMybatisApplication:55]Starting SpringBootMybatisApplication on DESKTOP-RKJ18PE with PID 8092 (E:\SWITCHING_PAPANG\Java\Scheduler\SchedulerSMSEmail\target\classes started by Mr Papang in E:\SWITCHING_PAPANG\Java\Scheduler\SchedulerSMSEmail)
+2021-12-15 15:43:35.684[                 ]INFO [otMybatisApplication:651]No active profile set, falling back to default profiles: default
+2021-12-15 15:43:38.291[                 ]INFO [otMybatisApplication:61]Started SpringBootMybatisApplication in 3.127 seconds (JVM running for 4.188)
+2021-12-15 15:43:50.554[                 ]INFO [.SubcriberController:276][Scheaduler - ] Start Delete Data
+2021-12-15 15:43:50.614[                 ]INFO [.SubcriberController:534][Scheaduler - ] delete to subcriber : {nama=Anja An, id=SUB20211215153526099215}
+2021-12-15 15:43:51.002[                 ]INFO [.SubcriberController:551][Scheaduler - ] delete to subcriber success.
+2021-12-15 15:43:51.002[                 ]INFO [.SubcriberController:297][Scheaduler - ] Success
+2021-12-15 15:44:58.814[                 ]INFO [.SubcriberController:276][Scheaduler - ] Start Delete Data
+2021-12-15 15:45:00.766[                 ]INFO [.SubcriberController:534][Scheaduler - ] delete to subcriber : {nama=Anja An, id=SUB20211215153526099215}
+2021-12-15 15:45:29.546[                 ]INFO [.SubcriberController:534][Scheaduler - ] delete to subcriber : {nama=Anja An, id=SUB20211215153526099215}
+2021-12-15 15:45:29.548[                 ]INFO [.SubcriberController:551][Scheaduler - ] delete to subcriber success.
+2021-12-15 15:45:29.549[                 ]INFO [.SubcriberController:307][Scheaduler - ] Error when update table subcriber.
+2021-12-15 15:45:33.058[                 ]INFO [.SubcriberController:276][Scheaduler - ] Start Delete Data
+2021-12-15 15:45:37.694[                 ]INFO [.SubcriberController:534][Scheaduler - ] delete to subcriber : {nama=Anja An, id=SUB20211215153526099215}
+2021-12-15 15:45:37.695[                 ]INFO [.SubcriberController:551][Scheaduler - ] delete to subcriber success.
+2021-12-15 15:45:37.695[                 ]INFO [.SubcriberController:307][Scheaduler - ] Error when update table subcriber.
+2021-12-15 15:46:25.929[                 ]INFO [.SubcriberController:276][Scheaduler - ] Start Delete Data
+2021-12-15 15:46:25.930[                 ]INFO [.SubcriberController:534][Scheaduler - ] delete to subcriber : {nama=Anja An, id=SUB20211215153526099215}
+2021-12-15 15:46:25.931[                 ]INFO [.SubcriberController:551][Scheaduler - ] delete to subcriber success.
+2021-12-15 15:46:25.931[                 ]INFO [.SubcriberController:307][Scheaduler - ] Error when update table subcriber.
+2021-12-15 15:46:39.703[                 ]INFO [.SubcriberController:276][Scheaduler - ] Start Delete Data
+2021-12-15 15:46:39.705[                 ]INFO [.SubcriberController:56][Scheaduler - ] Error ID Wrong
+2021-12-15 15:47:11.389[                 ]INFO [.SubcriberController:276][Scheaduler - ] Start Delete Data
+2021-12-15 15:47:11.391[                 ]INFO [.SubcriberController:56][Scheaduler - ] Error ID Wrong
+2021-12-15 15:47:17.138[                 ]INFO [.SubcriberController:276][Scheaduler - ] Start Delete Data
+2021-12-15 15:47:17.139[                 ]INFO [.SubcriberController:48][Scheaduler - ] Error Nama
+2021-12-15 15:47:21.620[                 ]INFO [.SubcriberController:276][Scheaduler - ] Start Delete Data
+2021-12-15 15:47:21.622[                 ]INFO [.SubcriberController:534][Scheaduler - ] delete to subcriber : {nama=Anja An TES, id=SUB20211215153526099215}
+2021-12-15 15:47:21.669[                 ]INFO [.SubcriberController:551][Scheaduler - ] delete to subcriber success.
+2021-12-15 15:47:21.669[                 ]INFO [.SubcriberController:307][Scheaduler - ] Error when update table subcriber.
+2021-12-15 15:47:33.097[                 ]INFO [.SubcriberController:276][Scheaduler - ] Start Delete Data
+2021-12-15 15:47:33.098[                 ]INFO [.SubcriberController:534][Scheaduler - ] delete to subcriber : {nama=Anja An TES, id=SUB20211215153526099215}
+2021-12-15 15:47:33.099[                 ]INFO [.SubcriberController:551][Scheaduler - ] delete to subcriber success.
+2021-12-15 15:47:33.099[                 ]INFO [.SubcriberController:307][Scheaduler - ] Error when update table subcriber.
+2021-12-15 15:47:46.021[                 ]INFO [.SubcriberController:276][Scheaduler - ] Start Delete Data
+2021-12-15 15:47:46.023[                 ]INFO [.SubcriberController:534][Scheaduler - ] delete to subcriber : {nama=Adi Nug, id=SUB20211215131820166222}
+2021-12-15 15:47:46.057[                 ]INFO [.SubcriberController:551][Scheaduler - ] delete to subcriber success.
+2021-12-15 15:47:46.057[                 ]INFO [.SubcriberController:307][Scheaduler - ] Error when update table subcriber.
+2021-12-15 15:48:33.563[                 ]INFO [otMybatisApplication:55]Starting SpringBootMybatisApplication on DESKTOP-RKJ18PE with PID 29924 (E:\SWITCHING_PAPANG\Java\Scheduler\SchedulerSMSEmail\target\classes started by Mr Papang in E:\SWITCHING_PAPANG\Java\Scheduler\SchedulerSMSEmail)
+2021-12-15 15:48:33.571[                 ]INFO [otMybatisApplication:651]No active profile set, falling back to default profiles: default
+2021-12-15 15:48:36.378[                 ]INFO [otMybatisApplication:61]Started SpringBootMybatisApplication in 3.36 seconds (JVM running for 4.504)
+2021-12-15 15:48:46.363[                 ]INFO [.SubcriberController:276][Scheaduler - ] Start Delete Data
+2021-12-15 15:48:46.418[                 ]INFO [.SubcriberController:534][Scheaduler - ] delete to subcriber : {nama=Adi Nug, id=SUB20211215131749170686}
+2021-12-15 15:48:46.792[                 ]INFO [.SubcriberController:551][Scheaduler - ] delete to subcriber success.
+2021-12-15 15:48:46.792[                 ]INFO [.SubcriberController:307][Scheaduler - ] Error when update table subcriber.
+2021-12-15 15:48:54.634[                 ]INFO [.SubcriberController:276][Scheaduler - ] Start Delete Data
+2021-12-15 15:48:54.635[                 ]INFO [.SubcriberController:534][Scheaduler - ] delete to subcriber : {nama=irawan papang subakti, id=SUB20211215131749170686}
+2021-12-15 15:48:54.641[                 ]INFO [.SubcriberController:546][Scheaduler - ] delete to subcriber fail
+2021-12-15 15:48:54.642[                 ]INFO [.SubcriberController:297][Scheaduler - ] Success
+2021-12-15 15:49:10.172[                 ]INFO [.SubcriberController:276][Scheaduler - ] Start Delete Data
+2021-12-15 15:49:10.173[                 ]INFO [.SubcriberController:534][Scheaduler - ] delete to subcriber : {nama=irawan papang subakti, id=SUB20211215131749170686}
+2021-12-15 15:49:47.894[                 ]INFO [.SubcriberController:534][Scheaduler - ] delete to subcriber : {nama=irawan papang subakti, id=SUB20211215131749170686}
+2021-12-15 15:49:51.424[                 ]INFO [.SubcriberController:551][Scheaduler - ] delete to subcriber success.
+2021-12-15 15:49:51.425[                 ]INFO [.SubcriberController:307][Scheaduler - ] Error when update table subcriber.
+2021-12-15 15:51:37.134[                 ]INFO [otMybatisApplication:55]Starting SpringBootMybatisApplication on DESKTOP-RKJ18PE with PID 7596 (E:\SWITCHING_PAPANG\Java\Scheduler\SchedulerSMSEmail\target\classes started by Mr Papang in E:\SWITCHING_PAPANG\Java\Scheduler\SchedulerSMSEmail)
+2021-12-15 15:51:37.141[                 ]INFO [otMybatisApplication:651]No active profile set, falling back to default profiles: default
+2021-12-15 15:51:40.062[                 ]INFO [otMybatisApplication:61]Started SpringBootMybatisApplication in 3.535 seconds (JVM running for 4.586)
+2021-12-15 15:51:47.146[                 ]INFO [.SubcriberController:276][Scheaduler - ] Start Delete Data
+2021-12-15 15:51:47.213[                 ]INFO [.SubcriberController:534][Scheaduler - ] delete to subcriber : {nama=irawan papang subakti, id=SUB20211215131749170686}
+2021-12-15 15:52:01.277[                 ]INFO [.SubcriberController:551][Scheaduler - ] delete to subcriber fail.
+2021-12-15 15:52:05.548[                 ]INFO [.SubcriberController:307][Scheaduler - ] Error when update table subcriber.
+2021-12-15 15:52:39.329[                 ]INFO [otMybatisApplication:55]Starting SpringBootMybatisApplication on DESKTOP-RKJ18PE with PID 1760 (E:\SWITCHING_PAPANG\Java\Scheduler\SchedulerSMSEmail\target\classes started by Mr Papang in E:\SWITCHING_PAPANG\Java\Scheduler\SchedulerSMSEmail)
+2021-12-15 15:52:39.335[                 ]INFO [otMybatisApplication:651]No active profile set, falling back to default profiles: default
+2021-12-15 15:52:42.145[                 ]INFO [otMybatisApplication:61]Started SpringBootMybatisApplication in 3.356 seconds (JVM running for 4.43)
+2021-12-15 15:52:44.691[                 ]INFO [.SubcriberController:276][Scheaduler - ] Start Delete Data
+2021-12-15 15:52:44.754[                 ]INFO [.SubcriberController:534][Scheaduler - ] delete to subcriber : {nama=irawan papang subakti, id=SUB20211215131749170686}
+2021-12-15 15:52:49.436[                 ]INFO [.SubcriberController:547][Scheaduler - ] delete to subcriber success
+2021-12-15 15:52:49.437[                 ]INFO [.SubcriberController:297][Scheaduler - ] Success
+2021-12-15 15:52:56.804[                 ]INFO [.SubcriberController:276][Scheaduler - ] Start Delete Data
+2021-12-15 15:52:56.805[                 ]INFO [.SubcriberController:534][Scheaduler - ] delete to subcriber : {nama=irawan papang subakti, id=SUB20211215131749170686}
+2021-12-15 15:52:56.806[                 ]INFO [.SubcriberController:552][Scheaduler - ] delete to subcriber fail.
+2021-12-15 15:52:56.806[                 ]INFO [.SubcriberController:307][Scheaduler - ] Error when update table subcriber.
+2021-12-15 15:53:05.435[                 ]INFO [.SubcriberController:130][Scheaduler - ] Start Add Data
+2021-12-15 15:53:05.436[                 ]INFO [.SubcriberController:444][Scheaduler - ] insert to subcriber : {nama=Anja An, nohp=0838323241213, id=SUB20211215155305992012, tipe=EMAIL, email=Anja@gmail.com}
+2021-12-15 15:53:05.474[                 ]INFO [.SubcriberController:466][Scheaduler - ] insert to subcriber success.
+2021-12-15 15:53:05.476[                 ]INFO [.SubcriberController:162][Scheaduler - ] Success
+2021-12-15 15:53:07.260[                 ]INFO [.SubcriberController:215][Scheaduler - ] Start Get Data
+2021-12-15 15:53:16.724[                 ]INFO [.SubcriberController:215][Scheaduler - ] Start Get Data
+2021-12-15 15:53:16.728[                 ]INFO [.SubcriberController:232][Scheaduler - ] Success
+2021-12-15 15:53:20.226[                 ]INFO [.SubcriberController:339][Scheaduler - ] Start Update Data
+2021-12-15 15:53:20.228[                 ]INFO [.SubcriberController:491][Scheaduler - ] update to subcriber : {nama=Anja An TES, nohp=0838323241213, id=SUB20211215155305992012, tipe=EMAIL, email=Anja@gmail.com}
+2021-12-15 15:53:20.368[                 ]INFO [.SubcriberController:512][Scheaduler - ] update to subcriber success.
+2021-12-15 15:53:20.370[                 ]INFO [.SubcriberController:371][Scheaduler - ] Success
+2021-12-15 15:53:25.003[                 ]INFO [.SubcriberController:276][Scheaduler - ] Start Delete Data
+2021-12-15 15:53:25.004[                 ]INFO [.SubcriberController:534][Scheaduler - ] delete to subcriber : {nama=irawan papang subakti, id=SUB20211215155305992012}
+2021-12-15 15:53:25.005[                 ]INFO [.SubcriberController:552][Scheaduler - ] delete to subcriber fail.
+2021-12-15 15:53:25.005[                 ]INFO [.SubcriberController:307][Scheaduler - ] Error when update table subcriber.
+2021-12-15 15:53:38.166[                 ]INFO [.SubcriberController:276][Scheaduler - ] Start Delete Data
+2021-12-15 15:53:38.168[                 ]INFO [.SubcriberController:534][Scheaduler - ] delete to subcriber : {nama=Anja An TES, id=SUB20211215155305992012}
+2021-12-15 15:53:38.200[                 ]INFO [.SubcriberController:547][Scheaduler - ] delete to subcriber success
+2021-12-15 15:53:38.200[                 ]INFO [.SubcriberController:297][Scheaduler - ] Success

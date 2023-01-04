@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.mgg.service.MparamMapper" >
+    <!--<cache />-->
+    <resultMap id="resParam" type="com.mgg.model.master.Mparam" >
+        <id column="ID" property="id" />
+        <result column="GRP_PARAM" property="grp_param" />
+        <result column="KD_PARAM" property="kd_param" />
+        <result column="PARAM" property="param" />
+    </resultMap>
+
+    <select id="getAllParam" resultMap="resParam" resultType="Mparam">
+        SELECT ID, GRP_PARAM, KD_PARAM, PARAM FROM MPARAM
+    </select>
+    
+    <select id="findById" resultType="Mparam">
+        SELECT ID, GRP_PARAM, KD_PARAM, PARAM FROM MPARAM WHERE ID=#{ID}
+    </select>
+    
+    <select id="findParamPassword" resultType="String">
+        SELECT PARAM FROM MPARAM 
+        WHERE 
+        GRP_PARAM=#{GRP_PARAM} AND
+        KD_PARAM=#{KD_PARAM}
+    </select>
+    
+    <update id="updateParam" parameterType="hashmap">
+        UPDATE MPARAM 
+		    <set>
+		      <if test="PARAM != null">PARAM=#{PARAM}</if>
+		    </set>
+		WHERE 
+			GRP_PARAM = #{GRP_PARAM}
+		AND
+			KD_PARAM=#{KD_PARAM}
+    </update>
+    
+    <select id="getParam" resultType="String">
+        SELECT PARAM FROM MPARAM 
+        WHERE 
+        GRP_PARAM=#{grp_param} AND
+        KD_PARAM=#{kd_param}
+    </select>
+</mapper>

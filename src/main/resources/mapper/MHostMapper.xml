@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.mgg.service.MHostMapper" >
+    <!--<cache />-->
+    <resultMap id="resHost" type="com.mgg.model.master.MHost" >
+        <result column="kd_host" property="kd_host" />
+        <result column="host_desc" property="host_desc" />
+        <result column="product_id" property="product_id" />
+    </resultMap>
+
+    <select id="getAllHost" resultMap="resHost" resultType="MHost">
+        SELECT 
+			kd_host, 
+			host_desc, 
+			product_id
+		FROM 
+			mhost
+    </select>
+    
+    <select id="findByBankCode" resultType="MHost">
+        SELECT 
+			kd_host, 
+			host_desc, 
+			product_id 
+		FROM 
+			mhost
+		WHERE 
+			product_id=#{product_id}
+    </select>
+</mapper>
