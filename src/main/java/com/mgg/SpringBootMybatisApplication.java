@@ -12,6 +12,7 @@ import org.springframework.http.client.ClientHttpRequestFactory;
 import org.springframework.http.client.HttpComponentsClientHttpRequestFactory;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.web.client.RestTemplate;
+import org.springframework.web.reactive.function.client.WebClient;
 
 @SpringBootApplication
 @EnableScheduling
@@ -36,7 +37,12 @@ public class SpringBootMybatisApplication {
 				.setDefaultRequestConfig(config).build();
 		return new HttpComponentsClientHttpRequestFactory(httpClient);
 	}
-	
+
+	@Bean
+	public WebClient.Builder getWebClientBuilder() {
+		return WebClient.builder();
+	}
+
 	public static void main(String[] args) {
 		SpringApplication.run(SpringBootMybatisApplication.class, args);
 	}

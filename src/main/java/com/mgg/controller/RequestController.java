@@ -4,28 +4,17 @@ import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.io.Writer;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Base64;
 import java.util.Date;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Objects;
 import java.util.Random;
 import java.net.ConnectException;
 import java.net.SocketTimeoutException;
 import java.net.UnknownHostException;
-import org.apache.http.HttpEntity;
-import org.apache.http.HttpResponse;
-import org.apache.http.NameValuePair;
-import org.apache.http.client.entity.UrlEncodedFormEntity;
-import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.DefaultHttpClient;
-import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.params.BasicHttpParams;
 import org.apache.http.params.HttpParams;
-import org.apache.http.util.EntityUtils;
-import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.slf4j.MDC;
@@ -48,7 +37,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestClientException;
-import org.springframework.web.client.RestTemplate;
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.interfaces.DecodedJWT;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -62,12 +50,13 @@ import com.mgg.model.inquiry.ResInquiryTotalAmount;
 import com.mgg.model.inquiry.ResInquiryVirtualAccountData;
 import com.mgg.model.jwt.ReqJwt;
 import com.mgg.model.jwt.ResJwt;
-import com.mgg.model.master.MHost;
+import com.mgg.model.payment.ReqPayment;
+import com.mgg.model.payment.ResPayment;
+import com.mgg.model.payment.ResPaymentPaidAmount;
+import com.mgg.model.payment.ResPaymentVirtualAccountData;
 import com.mgg.process.inquiry.ProcessInquiry;
+import com.mgg.process.payment.ProcessPayment;
 import com.mgg.security.JwtTokenUtil;
-import com.mgg.service.MHostMapper;
-import com.mgg.service.MparamMapper;
-import com.mgg.service.TbTransMapper;
 import com.mgg.service.impl.JwtUserDetailsServiceImpl;
 import io.jsonwebtoken.ExpiredJwtException;
 import io.jsonwebtoken.SignatureException;
@@ -78,18 +67,6 @@ import io.jsonwebtoken.SignatureException;
 public class RequestController {
 
 	Logger logger = LoggerFactory.getLogger(RequestController.class);
-
-	@Autowired
-	private MHostMapper mHostMapper;
-
-	@Autowired
-	private MparamMapper mParamMapper;
-
-	@Autowired
-	private TbTransMapper tbTransMapper;
-
-	@Autowired
-	private RestTemplate restTemplate;
 
 	@Autowired
 	private AuthenticationManager authenticationManager;
@@ -106,13 +83,17 @@ public class RequestController {
 	@Autowired
 	private ProcessInquiry processInquiry;
 
+	@Autowired
+	private ProcessPayment processPayment;
+
 	@Value("${server.port}")
 	private String serverPort;
 
 	ObjectMapper mapper = new ObjectMapper();
 	Gson gson = new Gson();
 
-	// ========================================== REQUEST =====================================================
+	// ========================================== REQUEST
+	// =====================================================
 
 	@RequestMapping(value = "/token", method = RequestMethod.POST)
 	private ResponseEntity<?> getToken(@RequestBody String body) throws Exception {
@@ -179,7 +160,6 @@ public class RequestController {
 		logger.info("[inq-mgg] Authorization header : " + headers.get("Authorization").get(0));
 
 		ReqInquiry reqInquiry = new ReqInquiry();
-		ResInquiry resInquiry = new ResInquiry();
 		ResInquiryVirtualAccountData accountData = new ResInquiryVirtualAccountData();
 
 		// TOKEN
@@ -188,7 +168,7 @@ public class RequestController {
 		} catch (Exception e) {
 			logger.error("[inq-mgg] :" + e.toString());
 			printTrace(e);
-			responseBody = gson.toJson(new ResInquiry(ConstantCode.ErrCode24, ConstantCode.ErrCode24Desc));
+			responseBody = gson.toJson(new ResInquiry(ConstantCode.ErrCode33, ConstantCode.ErrCode33Desc));
 			return ResponseEntity.status(401).contentType(MediaType.APPLICATION_JSON).body(responseBody);
 		}
 		// TOKEN
@@ -238,7 +218,7 @@ public class RequestController {
 				return ResponseEntity.status(504).contentType(MediaType.APPLICATION_JSON).body(responseBody);
 			}
 
-			throw e; // rethrow if not a ConnectException
+			throw e;
 
 		} catch (Exception e) {
 
@@ -251,7 +231,88 @@ public class RequestController {
 		}
 	}
 
-	// ========================================== FUNCTION ==========================================================
+	@RequestMapping(value = "/payment", method = RequestMethod.POST)
+	private ResponseEntity<?> getPayment(@RequestHeader HttpHeaders headers, @RequestBody String body) {
+
+		MDC.put("tid", generateUniqKey());
+
+		String responseBody = "";
+
+		logger.info("[pay-mgg] Authorization header : " + headers.get("Authorization").get(0));
+
+		ReqPayment reqPayment = new ReqPayment();
+		ResPaymentVirtualAccountData accountData = new ResPaymentVirtualAccountData();
+
+		// TOKEN
+		try {
+			authenticate(headers.get("Authorization").get(0));
+		} catch (Exception e) {
+			logger.error("[inq-mgg] :" + e.toString());
+			printTrace(e);
+			responseBody = gson.toJson(new ResPayment(ConstantCode.ErrCode33, ConstantCode.ErrCode33Desc));
+			return ResponseEntity.status(401).contentType(MediaType.APPLICATION_JSON).body(responseBody);
+		}
+		// TOKEN
+
+		logger.info("[pay-mgg] Request Start.");
+		logger.info("[pay-mgg] Payment Params Request : " + body);
+		logger.info("[pay-mgg] Check Server Port" + serverPort);
+
+		try {
+
+			logger.info("[pay-mgg] Send to client Start.");
+
+			reqPayment = mapper.readValue(body, ReqPayment.class);
+
+			HashMap<String, Object> proses = processPayment.sendToProcess(reqPayment);
+
+			logger.info("[pay-mgg] RESPONSE : " + mapper.writeValueAsString(proses));
+
+			if (proses.get("resultCd").equals(ConstantValidate.valCoded00)) {
+				accountData = new ResPaymentVirtualAccountData(reqPayment.getRetnum(), reqPayment.getTrx_date(),
+						reqPayment.getTrx_time(), proses.get("idbilling").toString(), proses.get("nama").toString(),
+						proses.get("alamat").toString(), new ResPaymentPaidAmount(proses.get("total").toString(), "IDR"),
+						proses.get("trxid").toString());
+				responseBody = gson.toJson(new ResPayment(proses.get("resultCd").toString(),
+						proses.get("resultMsg").toString(), accountData));
+				return ResponseEntity.status(200).contentType(MediaType.APPLICATION_JSON).body(responseBody);
+			} else {
+				responseBody = gson
+						.toJson(new ResPayment(proses.get("resultCd").toString(), proses.get("resultMsg").toString()));
+				return ResponseEntity.status(400).contentType(MediaType.APPLICATION_JSON).body(responseBody);
+			}
+
+		} catch (RestClientException e) {
+
+			if (e.getCause() instanceof ConnectException) {
+				logger.error("[pay-mgg] Could not connect to client.");
+				responseBody = gson.toJson(new ResPayment(ConstantCode.ErrCode86, ConstantCode.ErrCode86Desc));
+				return ResponseEntity.status(500).contentType(MediaType.APPLICATION_JSON).body(responseBody);
+			} else if (e.getCause() instanceof UnknownHostException) {
+				logger.error("[pay-mgg] Unknow client host.");
+				responseBody = gson.toJson(new ResPayment(ConstantCode.ErrCode86, ConstantCode.ErrCode86Desc));
+				return ResponseEntity.status(500).contentType(MediaType.APPLICATION_JSON).body(responseBody);
+			} else if (e.getCause() instanceof SocketTimeoutException) {
+				logger.error("[pay-mgg] Read Timeout to client.");
+				responseBody = gson.toJson(new ResPayment(ConstantCode.ErrCode86, ConstantCode.ErrCode86Desc));
+				return ResponseEntity.status(504).contentType(MediaType.APPLICATION_JSON).body(responseBody);
+			}
+
+			throw e;
+
+		} catch (Exception e) {
+
+			logger.info("[pay-mgg] Unknown Error.");
+			e.printStackTrace();
+			logger.error("[pay-mgg] " + e.toString());
+			printTrace(e);
+			responseBody = gson.toJson(new ResPayment(ConstantCode.ErrCode90, ConstantCode.ErrCode90Desc));
+			return ResponseEntity.status(500).contentType(MediaType.APPLICATION_JSON).body(responseBody);
+		}
+	}
+
+	// ========================================== FUNCTION
+	// ==========================================================
 
 	private void authenticate(String username, String password) throws Exception {
 		Objects.requireNonNull(username);
@@ -327,15 +388,6 @@ public class RequestController {
 		SimpleDateFormat sf = new SimpleDateFormat("yyyyMMddhhmmss.SSSZ." + random.nextInt(10));
 		String uniqKey = sf.format(currentDt);
 		return uniqKey;
-	}
-
-	private MHost cekHost(String product) throws Exception {
-
-		HashMap<String, Object> cekHost = new HashMap<String, Object>();
-		cekHost.put("product_id", product);
-		MHost cekHostName = mHostMapper.findByBankCode(cekHost);
-
-		return cekHostName;
 	}
 
 }

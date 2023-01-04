@@ -2,17 +2,18 @@ package com.mgg.model.payment;
 
 public class ReqPayment {
 
-	public String partnerServiceId;
-	public String customerNo;
-	public String virtualAccountNo;
-	public ReqPaymentPaidAmount paidAmount;
+	public String retnum;
+	public String trx_date;
+	public String trx_time;
 	public String sourceBankCode;
-	public String paymentRequestId;
-	public String getPartnerServiceId() {
-		return partnerServiceId;
+	public String customerNo;
+	public String trxid;
+	public ReqPaymentTotalAmount totalAmount;
+	public String getRetnum() {
+		return retnum;
 	}
-	public void setPartnerServiceId(String partnerServiceId) {
-		this.partnerServiceId = partnerServiceId;
+	public void setRetnum(String retnum) {
+		this.retnum = retnum;
 	}
 	public String getCustomerNo() {
 		return customerNo;
@@ -20,17 +21,17 @@ public class ReqPayment {
 	public void setCustomerNo(String customerNo) {
 		this.customerNo = customerNo;
 	}
-	public String getVirtualAccountNo() {
-		return virtualAccountNo;
+	public String getTrxid() {
+		return trxid;
 	}
-	public void setVirtualAccountNo(String virtualAccountNo) {
-		this.virtualAccountNo = virtualAccountNo;
+	public void setTrxid(String trxid) {
+		this.trxid = trxid;
 	}
-	public ReqPaymentPaidAmount getPaidAmount() {
-		return paidAmount;
+	public ReqPaymentTotalAmount getTotalAmount() {
+		return totalAmount;
 	}
-	public void setPaidAmount(ReqPaymentPaidAmount paidAmount) {
-		this.paidAmount = paidAmount;
+	public void setTotalAmount(ReqPaymentTotalAmount totalAmount) {
+		this.totalAmount = totalAmount;
 	}
 	public String getSourceBankCode() {
 		return sourceBankCode;
@@ -38,11 +39,17 @@ public class ReqPayment {
 	public void setSourceBankCode(String sourceBankCode) {
 		this.sourceBankCode = sourceBankCode;
 	}
-	public String getPaymentRequestId() {
-		return paymentRequestId;
+	public String getTrx_date() {
+		return trx_date;
 	}
-	public void setPaymentRequestId(String paymentRequestId) {
-		this.paymentRequestId = paymentRequestId;
+	public void setTrx_date(String trx_date) {
+		this.trx_date = trx_date;
 	}
-
+	public String getTrx_time() {
+		return trx_time;
+	}
+	public void setTrx_time(String trx_time) {
+		this.trx_time = trx_time;
+	}
+	
 }

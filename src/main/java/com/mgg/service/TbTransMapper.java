@@ -16,5 +16,7 @@ public interface TbTransMapper {
     public Integer updateTxId0203(HashMap<String, Object> params) throws Exception;
     public Integer updateTxId0403(HashMap<String, Object> params) throws Exception;
     public Integer updateTxIdd(HashMap<String, Object> params) throws Exception;
+    public List<TbTrans> findTxId(String txid) throws Exception;
+    public Integer updateTxIdAdditional(HashMap<String, Object> params) throws Exception;
 
 }

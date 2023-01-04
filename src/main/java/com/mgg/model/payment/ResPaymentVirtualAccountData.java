@@ -2,31 +2,47 @@ package com.mgg.model.payment;
 
 public class ResPaymentVirtualAccountData {
 
-	public String partnerServiceId;
+	public String retnum;
+	public String trx_date;
+	public String trx_time;
 	public String customerNo;
-	public String virtualAccountNo;
 	public String virtualAccountName;
-	public String paymentRequestId;
+	public String virtualAccountAddress;
 	public ResPaymentPaidAmount paidAmount;
-	public ResPaymentAdditionalInfo additionalInfo ;
+	public String trxid;
 	
-	public ResPaymentVirtualAccountData(String partnerServiceId, String customerNo, String virtualAccountNo,
-			String virtualAccountName, String paymentRequestId, ResPaymentPaidAmount paidAmount,
-			ResPaymentAdditionalInfo additionalInfo) {
+	public ResPaymentVirtualAccountData() {
 		super();
-		this.partnerServiceId = partnerServiceId;
+	}
+	public ResPaymentVirtualAccountData(String retnum, String trx_date, String trx_time, String customerNo,
+			String virtualAccountName, String virtualAccountAddress, ResPaymentPaidAmount paidAmount, String trxid) {
+		super();
+		this.retnum = retnum;
+		this.trx_date = trx_date;
+		this.trx_time = trx_time;
 		this.customerNo = customerNo;
-		this.virtualAccountNo = virtualAccountNo;
 		this.virtualAccountName = virtualAccountName;
-		this.paymentRequestId = paymentRequestId;
+		this.virtualAccountAddress = virtualAccountAddress;
 		this.paidAmount = paidAmount;
-		this.additionalInfo = additionalInfo;
+		this.trxid = trxid;
 	}
-	public String getPartnerServiceId() {
-		return partnerServiceId;
+	public String getRetnum() {
+		return retnum;
 	}
-	public void setPartnerServiceId(String partnerServiceId) {
-		this.partnerServiceId = partnerServiceId;
+	public void setRetnum(String retnum) {
+		this.retnum = retnum;
+	}
+	public String getTrx_date() {
+		return trx_date;
+	}
+	public void setTrx_date(String trx_date) {
+		this.trx_date = trx_date;
+	}
+	public String getTrx_time() {
+		return trx_time;
+	}
+	public void setTrx_time(String trx_time) {
+		this.trx_time = trx_time;
 	}
 	public String getCustomerNo() {
 		return customerNo;
@@ -34,23 +50,17 @@ public class ResPaymentVirtualAccountData {
 	public void setCustomerNo(String customerNo) {
 		this.customerNo = customerNo;
 	}
-	public String getVirtualAccountNo() {
-		return virtualAccountNo;
-	}
-	public void setVirtualAccountNo(String virtualAccountNo) {
-		this.virtualAccountNo = virtualAccountNo;
-	}
 	public String getVirtualAccountName() {
 		return virtualAccountName;
 	}
 	public void setVirtualAccountName(String virtualAccountName) {
 		this.virtualAccountName = virtualAccountName;
 	}
-	public String getPaymentRequestId() {
-		return paymentRequestId;
+	public String getVirtualAccountAddress() {
+		return virtualAccountAddress;
 	}
-	public void setPaymentRequestId(String paymentRequestId) {
-		this.paymentRequestId = paymentRequestId;
+	public void setVirtualAccountAddress(String virtualAccountAddress) {
+		this.virtualAccountAddress = virtualAccountAddress;
 	}
 	public ResPaymentPaidAmount getPaidAmount() {
 		return paidAmount;
@@ -58,11 +68,12 @@ public class ResPaymentVirtualAccountData {
 	public void setPaidAmount(ResPaymentPaidAmount paidAmount) {
 		this.paidAmount = paidAmount;
 	}
-	public ResPaymentAdditionalInfo getAdditionalInfo() {
-		return additionalInfo;
+	public String getTrxid() {
+		return trxid;
 	}
-	public void setAdditionalInfo(ResPaymentAdditionalInfo additionalInfo) {
-		this.additionalInfo = additionalInfo;
+	public void setTrxid(String trxid) {
+		this.trxid = trxid;
 	}
-
+	
+	
 }

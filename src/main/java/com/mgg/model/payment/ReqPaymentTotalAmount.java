@@ -1,9 +1,18 @@
 package com.mgg.model.payment;
 
-public class ReqPaymentPaidAmount {
+public class ReqPaymentTotalAmount {
 
 	public String value;
 	public String currency;
+	
+	public ReqPaymentTotalAmount() {
+		super();
+	}
+	public ReqPaymentTotalAmount(String value, String currency) {
+		super();
+		this.value = value;
+		this.currency = currency;
+	}
 	public String getValue() {
 		return value;
 	}

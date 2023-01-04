@@ -15,7 +15,8 @@
         <result column="amount" property="amount" />
         <result column="fine" property="fine" />
         <result column="total" property="total" />
-        <result column="response" property="response" />
+        <result column="response_inquiry" property="response_inquiry" />
+        <result column="response_payment" property="response_payment" />
         <result column="additional_data" property="additional_data" />
         <result column="product_id" property="product_id" />
         <result column="merchant_id" property="merchant_id" />
@@ -35,7 +36,8 @@
 			amount,
 			fine,
 			total,
-			response,
+			response_inquiry,
+			response_payment,
 			additional_data,
 			product_id,
 			merchant_id,
@@ -62,7 +64,8 @@
 			amount,
 			fine,
 			total,
-			response,
+			response_inquiry,
+			response_payment,
 			additional_data,
 			product_id,
 			merchant_id,
@@ -95,7 +98,8 @@
 			amount,
 			fine,
 			total,
-			response,
+			response_inquiry,
+			response_payment,
 			additional_data,
 			product_id,
 			merchant_id,
@@ -121,7 +125,8 @@
 			amount,
 			fine,
 			total,
-			response,
+			response_inquiry,
+			response_payment,
 			additional_data,
 			product_id,
 			merchant_id,
@@ -140,7 +145,8 @@
 			#{amount},
 			#{fine},
 			#{total},
-			#{response},
+			#{response_inquiry},
+			#{response_payment},
 			#{additional_data},
 			#{product_id},
 			#{merchant_id},
@@ -151,8 +157,8 @@
     <update id="updateTxIdd" parameterType="hashmap">
         UPDATE tb_trans 
 		    <set>
-		      TRANS_DT = DATE_FORMAT(NOW(),'%Y%m%d'), 
-	    	  TRANS_TM = DATE_FORMAT(NOW(),'%H%i%s'),
+		      trans_dt = DATE_FORMAT(NOW(),'%Y%m%d'), 
+	    	  trans_tm = DATE_FORMAT(NOW(),'%H%i%s'),
 		      <if test="trxid != null">trxid=#{trxid}</if>,
 		      <if test="status != null">status=#{status}</if>,
 		      <if test="retnum != null">retnum=#{retnum}</if>,
@@ -162,7 +168,8 @@
 		      <if test="amount != null">amount=#{amount}</if>,
 		      <if test="fine != null">fine=#{fine}</if>,
 		      <if test="total != null">total=#{total}</if>,
-		      <if test="response != null">response=#{response}</if>,
+		      <if test="response_inquiry != null">response_inquiry=#{response_inquiry}</if>,
+		      <if test="response_payment != null">response_payment=#{response_payment}</if>,
 		      <if test="additional_data != null">additional_data=#{additional_data}</if>,
 		      <if test="product_id != null">product_id=#{product_id}</if>,
 		      <if test="merchant_id != null">merchant_id=#{merchant_id}</if>,
@@ -180,8 +187,8 @@
     <update id="updateTxId0203" parameterType="hashmap">
         UPDATE tb_trans 
 		    <set>
-		      TRANS_DT = DATE_FORMAT(NOW(),'%Y%m%d'), 
-	    	  TRANS_TM = DATE_FORMAT(NOW(),'%H%i%s'),
+		      trans_dt = DATE_FORMAT(NOW(),'%Y%m%d'), 
+	    	  trans_tm = DATE_FORMAT(NOW(),'%H%i%s'),
 		      <if test="trxid != null">trxid=#{trxid}</if>,
 		      <if test="status != null">status=#{status}</if>,
 		      <if test="retnum != null">retnum=#{retnum}</if>,
@@ -191,7 +198,8 @@
 		      <if test="amount != null">amount=#{amount}</if>,
 		      <if test="fine != null">fine=#{fine}</if>,
 		      <if test="total != null">total=#{total}</if>,
-		      <if test="response != null">response=#{response}</if>,
+		      <if test="response_inquiry != null">response_inquiry=#{response_inquiry}</if>,
+		      <if test="response_payment != null">response_payment=#{response_payment}</if>,
 		      <if test="additional_data != null">additional_data=#{additional_data}</if>,
 		      <if test="product_id != null">product_id=#{product_id}</if>,
 		      <if test="merchant_id != null">merchant_id=#{merchant_id}</if>,
@@ -209,8 +217,8 @@
     <update id="updateTxId0403" parameterType="hashmap">
         UPDATE tb_trans 
 		    <set>
-		      TRANS_DT = DATE_FORMAT(NOW(),'%Y%m%d'), 
-	    	  TRANS_TM = DATE_FORMAT(NOW(),'%H%i%s'),
+		      trans_dt = DATE_FORMAT(NOW(),'%Y%m%d'), 
+	    	  trans_tm = DATE_FORMAT(NOW(),'%H%i%s'),
 		      <if test="trxid != null">trxid=#{trxid}</if>,
 		      <if test="status != null">status=#{status}</if>,
 		      <if test="retnum != null">retnum=#{retnum}</if>,
@@ -220,7 +228,8 @@
 		      <if test="amount != null">amount=#{amount}</if>,
 		      <if test="fine != null">fine=#{fine}</if>,
 		      <if test="total != null">total=#{total}</if>,
-		      <if test="response != null">response=#{response}</if>,
+		      <if test="response_inquiry != null">response_inquiry=#{response_inquiry}</if>,
+		      <if test="response_payment != null">response_payment=#{response_payment}</if>,
 		      <if test="additional_data != null">additional_data=#{additional_data}</if>,
 		      <if test="product_id != null">product_id=#{product_id}</if>,
 		      <if test="merchant_id != null">merchant_id=#{merchant_id}</if>,
@@ -234,5 +243,43 @@
 			status = '04'
 		
     </update>
+    
+    <select id="findTxId" resultType="TbTrans">
+		SELECT
+		    trxid,
+			trans_dt,
+			trans_tm,
+			status,
+			retnum,
+			customer_id,
+			customer_name,
+			customer_address,
+			amount,
+			fine,
+			total,
+			response_inquiry,
+			response_payment,
+			additional_data,
+			product_id,
+			merchant_id,
+			periode
+		FROM
+			tb_trans
+		WHERE
+			trxid = #{trxid}
+	</select>
+	
+	<update id="updateTxIdAdditional" parameterType="hashmap">
+		UPDATE tb_trans
+		<!-- SET -->
+		<set>
+		      trans_dt = DATE_FORMAT(NOW(),'%Y%m%d'), 
+	    	  trans_tm = DATE_FORMAT(NOW(),'%H%i%s'),
+			<if test="status != null">status=#{status},</if>
+			<if test="response_payment != null">response_payment=#{response_payment}</if>
+		</set>
+		WHERE
+			trxid = #{trxid}
+	</update>
     
 </mapper>

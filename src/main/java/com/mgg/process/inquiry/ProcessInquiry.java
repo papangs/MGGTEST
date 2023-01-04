@@ -20,6 +20,8 @@ import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.params.BasicHttpParams;
 import org.apache.http.params.HttpParams;
 import org.apache.http.util.EntityUtils;
+import org.jasypt.encryption.pbe.PooledPBEStringEncryptor;
+import org.jasypt.encryption.pbe.config.SimpleStringPBEConfig;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.slf4j.Logger;
@@ -61,17 +63,17 @@ public class ProcessInquiry {
 		HttpParams httpParams = new BasicHttpParams();
 		DefaultHttpClient httpClient = new DefaultHttpClient(httpParams);
 
-		String url = mParamMapper.getParam(cekHost(reqInquiry.getSourceBankCode()).getKd_host(), "url") + "/signon";
+		String url = decrypt(mParamMapper.getParam(cekHost(reqInquiry.getSourceBankCode()).getKd_host(), "url")) + "/signon";
 
 		HttpPost httpPost = new HttpPost(url);
 
-		logger.info("[inq-process] REQUEST TOKEN TO BILLER : " + url);
+		logger.info("[inq-process] REQUEST TOKEN TO BILLER : " + encrypt(url));
 
 		List<NameValuePair> params = new ArrayList<NameValuePair>();
-		params.add(new BasicNameValuePair("username", mParamMapper.getParam(cekHost(reqInquiry.getSourceBankCode()).getKd_host(), "username")));
-		params.add(new BasicNameValuePair("password", mParamMapper.getParam(cekHost(reqInquiry.getSourceBankCode()).getKd_host(), "password")));
+		params.add(new BasicNameValuePair("username", decrypt(mParamMapper.getParam(cekHost(reqInquiry.getSourceBankCode()).getKd_host(), "username"))));
+		params.add(new BasicNameValuePair("password", decrypt(mParamMapper.getParam(cekHost(reqInquiry.getSourceBankCode()).getKd_host(), "password"))));
 
-		logger.info("[inq-process] FORM DATA TOKEN TO BILLER : " + params);
+		logger.info("[inq-process] FORM DATA TOKEN TO BILLER : " + encrypt(params.toString()));
 
 		httpPost.setEntity(new UrlEncodedFormEntity(params, "UTF-8"));
 
@@ -97,18 +99,18 @@ public class ProcessInquiry {
 			HttpParams httpParams = new BasicHttpParams();
 			DefaultHttpClient httpClient = new DefaultHttpClient(httpParams);
 
-			String user = mParamMapper.getParam(cekHost(reqInquiry.getSourceBankCode()).getKd_host(), "username");
-			String pass = mParamMapper.getParam(cekHost(reqInquiry.getSourceBankCode()).getKd_host(), "password");
-			String url = mParamMapper.getParam(cekHost(reqInquiry.getSourceBankCode()).getKd_host(), "url") + "/inquiry/" + reqInquiry.getCustomerNo();
+			String user = decrypt(mParamMapper.getParam(cekHost(reqInquiry.getSourceBankCode()).getKd_host(), "username"));
+			String pass = decrypt(mParamMapper.getParam(cekHost(reqInquiry.getSourceBankCode()).getKd_host(), "password"));
+			String url = decrypt(mParamMapper.getParam(cekHost(reqInquiry.getSourceBankCode()).getKd_host(), "url")) + "/inquiry/" + reqInquiry.getCustomerNo();
 
-			logger.info("[inq-process] REQUEST TO BILLER : " + url);
+			logger.info("[inq-process] REQUEST TO BILLER : " + encrypt(url));
 
 			HttpPost httpPost = new HttpPost(url);
 
 			List<NameValuePair> params = new ArrayList<NameValuePair>();
 			params.add(new BasicNameValuePair("token", getToken(reqInquiry, user, pass)));
 
-			logger.info("[inq-process] FORM DATA TO BILLER : " + params);
+			logger.info("[inq-process] FORM DATA TO BILLER : " + encrypt(params.toString()));
 
 			httpPost.setEntity(new UrlEncodedFormEntity(params, "UTF-8"));
 
@@ -117,7 +119,7 @@ public class ProcessInquiry {
 
 			String content = EntityUtils.toString(entity);
 
-			logger.info("[inq-process] RESPONSE FROM BILLER : " + url);
+			logger.info("[inq-process] RESPONSE FROM BILLER : " + content);
 
 			JSONParser parser = new JSONParser();
 			JSONObject result = (JSONObject) parser.parse(content);
@@ -204,7 +206,7 @@ public class ProcessInquiry {
 					prepReq.put("resultCd", ret);
 					prepReq.put("resultMsg", msg);
 
-				}
+				} 
 
 			}
 
@@ -290,7 +292,6 @@ public class ProcessInquiry {
 
 			Date date = new Date();
 			SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmmss");
-			SimpleDateFormat dateFormat2 = new SimpleDateFormat("mmss");
 
 			Random randomInt = new Random();
 			Integer intRand = randomInt.nextInt(999999);
@@ -304,7 +305,6 @@ public class ProcessInquiry {
 
 			BigDecimal TotalTag = BigDecimal.ZERO;
 			BigDecimal TotalDenda = BigDecimal.ZERO;
-			Integer TotalAdminFee = 0;
 			BigDecimal TotalSettlement = BigDecimal.ZERO;
 			Integer bill_reapeat = 0;
 
@@ -378,12 +378,13 @@ public class ProcessInquiry {
 				inp.put("status", "03");
 				inp.put("retnum", reqInquiry.getRetnum());
 				inp.put("customer_id", data.get("custno"));
-				inp.put("customer_name", data.get("custno"));
-				inp.put("customer_address", data.get("custno"));
+				inp.put("customer_name", data.get("custname"));
+				inp.put("customer_address", data.get("custaddr"));
 				inp.put("amount", TotalTag);
 				inp.put("fine", TotalDenda);
 				inp.put("total", TotalSettlement);
-				inp.put("response", strParams);
+				inp.put("response_inquiry", strParams);
+				inp.put("response_payment", "");
 				inp.put("additional_data", "");
 				inp.put("product_id", reqInquiry.getSourceBankCode());
 				inp.put("merchant_id", "");
@@ -399,12 +400,13 @@ public class ProcessInquiry {
 					inp1.put("status", "03");
 					inp1.put("retnum", reqInquiry.getRetnum());
 					inp1.put("customer_id", data.get("custno"));
-					inp1.put("customer_name", data.get("custno"));
-					inp1.put("customer_address", data.get("custno"));
+					inp1.put("customer_name", data.get("custname"));
+					inp1.put("customer_address", data.get("custaddr"));
 					inp1.put("amount", TotalTag);
 					inp1.put("fine", TotalDenda);
 					inp1.put("total", TotalSettlement);
-					inp1.put("response", strParams);
+					inp1.put("response_inquiry", strParams);
+					inp1.put("response_payment", "");
 					inp1.put("additional_data", "");
 					inp1.put("product_id", reqInquiry.getSourceBankCode());
 					inp1.put("merchant_id", "");
@@ -424,22 +426,23 @@ public class ProcessInquiry {
 
 					if (cTrans.getStatus().equals("04")) {
 
-						inp1.put("trxid", TRXID);
-						inp1.put("trxid_old", cTrans.getTrxid());
-						inp1.put("status", "03");
-						inp1.put("retnum", reqInquiry.getRetnum());
-						inp1.put("customer_id", data.get("custno"));
-						inp1.put("customer_name", data.get("custno"));
-						inp1.put("customer_address", data.get("custno"));
-						inp1.put("amount", TotalTag);
-						inp1.put("fine", TotalDenda);
-						inp1.put("total", TotalSettlement);
-						inp1.put("response", strParams);
-						inp1.put("additional_data", "");
-						inp1.put("product_id", reqInquiry.getSourceBankCode());
-						inp1.put("merchant_id", "");
-						inp1.put("periode", year);
-						
+						inps.put("trxid", TRXID);
+						inps.put("trxid_old", cTrans.getTrxid());
+						inps.put("status", "03");
+						inps.put("retnum", reqInquiry.getRetnum());
+						inps.put("customer_id", data.get("custno"));
+						inps.put("customer_name", data.get("custname"));
+						inps.put("customer_address", data.get("custaddr"));
+						inps.put("amount", TotalTag);
+						inps.put("fine", TotalDenda);
+						inps.put("total", TotalSettlement);
+						inps.put("response_inquiry", strParams);
+						inps.put("response_payment", "");
+						inps.put("additional_data", "");
+						inps.put("product_id", reqInquiry.getSourceBankCode());
+						inps.put("merchant_id", "");
+						inps.put("periode", year);
+					
 						Integer sels = tbTransMapper.updateTxId0403(inps);
 						tXid = inps.get("trxid").toString();
 
@@ -457,12 +460,13 @@ public class ProcessInquiry {
 						inp2.put("status", "03");
 						inp2.put("retnum", reqInquiry.getRetnum());
 						inp2.put("customer_id", data.get("custno"));
-						inp2.put("customer_name", data.get("custno"));
-						inp2.put("customer_address", data.get("custno"));
+						inp2.put("customer_name", data.get("custname"));
+						inp2.put("customer_address", data.get("custaddr"));
 						inp2.put("amount", TotalTag);
 						inp2.put("fine", TotalDenda);
 						inp2.put("total", TotalSettlement);
-						inp2.put("response", strParams);
+						inp2.put("response_inquiry", strParams);
+						inp2.put("response_payment", "");
 						inp2.put("additional_data", "");
 						inp2.put("product_id", reqInquiry.getSourceBankCode());
 						inp2.put("merchant_id", "");
@@ -491,12 +495,13 @@ public class ProcessInquiry {
 						inp3.put("status", "03");
 						inp3.put("retnum", reqInquiry.getRetnum());
 						inp3.put("customer_id", data.get("custno"));
-						inp3.put("customer_name", data.get("custno"));
-						inp3.put("customer_address", data.get("custno"));
+						inp3.put("customer_name", data.get("custname"));
+						inp3.put("customer_address", data.get("custaddr"));
 						inp3.put("amount", TotalTag);
 						inp3.put("fine", TotalDenda);
 						inp3.put("total", TotalSettlement);
-						inp3.put("response", strParams);
+						inp3.put("response_inquiry", strParams);
+						inp3.put("response_payment", "");
 						inp3.put("additional_data", "");
 						inp3.put("product_id", reqInquiry.getSourceBankCode());
 						inp3.put("merchant_id", "");
@@ -536,4 +541,34 @@ public class ProcessInquiry {
 		
 		return cekHostName;
 	}
+	
+	public String encrypt(String plain){
+        PooledPBEStringEncryptor encryptor = new PooledPBEStringEncryptor();
+        SimpleStringPBEConfig config = new SimpleStringPBEConfig();
+        config.setPassword("p1nt4rkau23mggTest"); // encryptor's private key
+        config.setAlgorithm("PBEWithMD5AndDES");
+        config.setKeyObtentionIterations("1000");
+        config.setPoolSize("1");
+        config.setProviderName("SunJCE");
+        config.setSaltGeneratorClassName("org.jasypt.salt.RandomSaltGenerator");
+        config.setStringOutputType("base64");
+        encryptor.setConfig(config);
+        
+        return encryptor.encrypt(plain);
+    }
+	
+	public String decrypt(String plain){
+        PooledPBEStringEncryptor encryptor = new PooledPBEStringEncryptor();
+        SimpleStringPBEConfig config = new SimpleStringPBEConfig();
+        config.setPassword("p1nt4rkau23mggTest"); // encryptor's private key
+        config.setAlgorithm("PBEWithMD5AndDES");
+        config.setKeyObtentionIterations("1000");
+        config.setPoolSize("1");
+        config.setProviderName("SunJCE");
+        config.setSaltGeneratorClassName("org.jasypt.salt.RandomSaltGenerator");
+        config.setStringOutputType("base64");
+        encryptor.setConfig(config);
+        
+        return encryptor.decrypt(plain);
+    }
 }

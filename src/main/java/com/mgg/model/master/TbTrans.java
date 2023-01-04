@@ -13,7 +13,8 @@ public class TbTrans {
 	private String amount;
 	private String fine;
 	private String total;
-	private String response;
+	private String response_inquiry;
+	private String response_payment;
 	private String additional_data;
 	private String product_id;
 	private String merchant_id;
@@ -84,12 +85,6 @@ public class TbTrans {
 	public void setTotal(String total) {
 		this.total = total;
 	}
-	public String getResponse() {
-		return response;
-	}
-	public void setResponse(String response) {
-		this.response = response;
-	}
 	public String getAdditional_data() {
 		return additional_data;
 	}
@@ -114,5 +109,16 @@ public class TbTrans {
 	public void setPeriode(String periode) {
 		this.periode = periode;
 	}
-	
+	public String getResponse_inquiry() {
+		return response_inquiry;
+	}
+	public void setResponse_inquiry(String response_inquiry) {
+		this.response_inquiry = response_inquiry;
+	}
+	public String getResponse_payment() {
+		return response_payment;
+	}
+	public void setResponse_payment(String response_payment) {
+		this.response_payment = response_payment;
+	}
 }
