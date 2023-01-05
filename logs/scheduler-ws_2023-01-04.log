@@ -5047,3 +5047,365 @@ Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown co
 2023-01-04 11:29:21.592[112918.267+0700.7]INFO [yment.ProcessPayment:399][pay-process] update to tb_trans success.
 2023-01-04 11:29:21.592[112918.267+0700.7]INFO [yment.ProcessPayment:183][pay-process] Update db after bill success.
 2023-01-04 11:29:21.592[112918.267+0700.7]INFO [er.RequestController:269][pay-mgg] RESPONSE : {"trxData":"{\"custno\":\"03062003522\",\"custname\":\"SOLEH (A)\",\"custaddr\":\"Pondok Benda Indah - T 9 #20214222 -\",\"numperiod\":1,\"periods\":\"202210\",\"used\":34,\"bill\":260200,\"fines\":0,\"total\":260200,\"respcode\":\"00\",\"message\":\"Sukses\"}","resultCd":"00","amount":260200,"total":260200,"charge":0,"nama":"SOLEH (A)","idbilling":"03062003522","trxid":"TRXIDMGG20230104112901306843","resultMsg":"Success","alamat":"Pondok Benda Indah - T 9 #20214222 -"}
+2023-01-04 18:50:02.874[                 ]INFO [otMybatisApplication:55]Starting SpringBootMybatisApplication on LAPTOP-LTAPOCEJ with PID 18312 (D:\Ujian\PTMGG\MGGTEST\target\classes started by Irawan Papang S in D:\Ujian\PTMGG\MGGTEST)
+2023-01-04 18:50:02.886[                 ]INFO [otMybatisApplication:651]No active profile set, falling back to default profiles: default
+2023-01-04 18:50:07.003[                 ]INFO [otMybatisApplication:61]Started SpringBootMybatisApplication in 4.635 seconds (JVM running for 5.915)
+2023-01-04 18:50:50.260[                 ]WARN [ity.JwtRequestFilter:50]JWT Token does not begin with Bearer String
+2023-01-04 18:50:50.293[                 ]INFO [er.RequestController:105][token-mgg] Get Token Request.{
+    "param": "bWdnOm1nZzIwMjM="
+}
+2023-01-04 18:50:50.350[                 ]INFO [er.RequestController:117][token-mgg] GrantType is : mgg:mgg2023
+2023-01-04 18:50:50.871[                 ]INFO [er.RequestController:137][token-mgg] TOKEN : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtZ2ciLCJleHAiOjE2NzI4NTEwNTAsImlhdCI6MTY3MjgzMzA1MH0.AcTA3_KDGGsHxr-MhmH0eUDEQzNo4qy7u8EzXzawlYki4HYpZKO58FYh4T9TC1WGcNB-DVgyQjx-3G_Lmf1ITQ
+2023-01-04 18:50:50.888[                 ]INFO [er.RequestController:141][token-mgg] : jwtExp : 1672851050000
+2023-01-04 18:50:50.888[                 ]INFO [er.RequestController:144][token-mgg] : timeNow : 1672833050888
+2023-01-04 18:50:50.888[                 ]INFO [er.RequestController:146][token-mgg] : Expired : 17999
+2023-01-04 18:51:02.586[065102.586+0700.1]INFO [er.RequestController:160][inq-mgg] Authorization header : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtZ2ciLCJleHAiOjE2NzI4NTEwNTAsImlhdCI6MTY3MjgzMzA1MH0.AcTA3_KDGGsHxr-MhmH0eUDEQzNo4qy7u8EzXzawlYki4HYpZKO58FYh4T9TC1WGcNB-DVgyQjx-3G_Lmf1ITQ
+2023-01-04 18:51:02.595[065102.586+0700.1]INFO [er.RequestController:342][jwt-mgg] : jwtExp : 1672851050000
+2023-01-04 18:51:02.595[065102.586+0700.1]INFO [er.RequestController:345][jwt-mgg] : timeNow : 1672833062595
+2023-01-04 18:51:02.595[065102.586+0700.1]INFO [er.RequestController:347][jwt-mgg] : Expired Difference : 17987
+2023-01-04 18:51:02.595[065102.586+0700.1]INFO [er.RequestController:176][inq-mgg] Request Start.
+2023-01-04 18:51:02.595[065102.586+0700.1]INFO [er.RequestController:177][inq-mgg] Inquiry Params Request : {
+    "retnum": "1234567",
+    "customerNo": "03062003522",
+    "sourceBankCode": "1234",
+    "trx_date": "2023‐01‐04",
+    "trx_time": "01:35:00"
+}
+2023-01-04 18:51:02.595[065102.586+0700.1]INFO [er.RequestController:178][inq-mgg] Check Server Port2805
+2023-01-04 18:51:02.595[065102.586+0700.1]INFO [er.RequestController:182][inq-mgg] Send to client Start.
+2023-01-04 18:51:02.595[065102.586+0700.1]INFO [quiry.ProcessInquiry:96][inq-process] =====================================
+2023-01-04 18:51:02.595[065102.586+0700.1]INFO [quiry.ProcessInquiry:97][inq-process] SEND TO BILLER SERVER START : 03062003522
+2023-01-04 18:51:02.668[065102.586+0700.1]INFO [quiry.ProcessInquiry:106][inq-process] REQUEST TO BILLER : 9sUsEYHk+Y8wwXhH+ZJVdOMfFhF3VfdYlvzd19+8iSwBYOn1y7HitI8sUdG0G+KS5B0FOrxYGN8oN8bd5hatvQ==
+2023-01-04 18:51:02.676[065102.586+0700.1]INFO [quiry.ProcessInquiry:70][inq-process] REQUEST TOKEN TO BILLER : d9o4oj3It/M8+72SkS2lsxeJspFKVku5ROZrb98oijuavSShA8ZHEOebxm30dO2d
+2023-01-04 18:51:02.692[065102.586+0700.1]INFO [quiry.ProcessInquiry:76][inq-process] FORM DATA TOKEN TO BILLER : 56P83dokGqwuWfHP7FDKBF/Od9QfdxvzFJL/VwWmt20xONCOw+TcTUHfKqeuWg2EbnukjvpmwJbbBoJ6IlF/WvYNJpqOQnXZaa0ICSlBYUA=
+2023-01-04 18:51:03.299[065102.586+0700.1]INFO [quiry.ProcessInquiry:85][inq-process] RESPONSE TOKEN FROM BILLER : {"respcode":"00","user":"fortuna","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ0aXJ0YXR1YWhiZW51YS5uZXQiLCJpYXQiOjE2NzI4MzMwNjYsImp0aSI6Ik9Ua3dhbk0zV0dSTWFGcGFadz09IiwibmJmIjoxNjcyODMzMDc2LCJleHAiOjE2NzI4MzMzNzYsImRhdGEiOnsidXNlcm5hbWUiOiJmb3J0dW5hIn0sInN1YiI6bnVsbCwiYXVkIjpudWxsfQ.bWzZako5861CW4jjE7CDpSftZyvT2mZFPXyaGL8ZsE0"}
+2023-01-04 18:51:03.299[065102.586+0700.1]INFO [quiry.ProcessInquiry:113][inq-process] FORM DATA TO BILLER : PlhSdfuYnojJAQ9mj06RYtcSkvDnWDg7sEw18/RFobrcRwMvrjiPgB0J++hvfsyvRPq+fHrPkKGqMXV5J5IqR4QOwnelDPsUZmC+OxUgVSwCoAxn7p+BJkpjO86gGnxKEfqsyuWetsti37gJk25fKq2cTApwNa7FW3UqcTUnsmM/a36VLNcxod0MHBA6qBSvcZyG+VIrdIIajG8AjYym9YOnhkCGX8Y/27qYeRvOQvbdgiK00TLIYOGRnwKE2HMxZzn4ikXsTRI9caL4bt9M3EAMrM1MB9HN1nQvE8qelJQExrRgVLqI2HZu8zmb1GBGtilVMwh9rsiVV5gfyoplJbj4Ma2Qd9exvfR4+kbb1nrC/qWRUsVla6GJtUj5adFztzQeW79FRrUPv00DZ3PHGEbUZ2LslK3UXjhOXuhzZHqSUUm08p//bsI5V/CaAjRfxLkoXOrjU/7NHm2npelJuicfZzML8AbS
+2023-01-04 18:51:06.588[065102.586+0700.1]INFO [quiry.ProcessInquiry:122][inq-process] RESPONSE FROM BILLER : {"custno":"03062003522","custname":"SOLEH (A)","custaddr":"Pondok Benda Indah - T 9 #20214222 -","numperiod":0,"periods":"","used":0,"bill":0,"fines":0,"total":0,"respcode":"13","message":"Data tagihan telah lunas"}
+2023-01-04 18:51:06.596[065102.586+0700.1]INFO [quiry.ProcessInquiry:135][inq-process] RESPONSE BILLER CODE : 13
+2023-01-04 18:51:06.604[065102.586+0700.1]INFO [quiry.ProcessInquiry:136][inq-process] RESPONSE BILLER CODE Message : Data tagihan telah lunas
+2023-01-04 18:51:06.604[065102.586+0700.1]INFO [quiry.ProcessInquiry:137][inq-process] =====================================
+2023-01-04 18:51:06.607[065102.586+0700.1]INFO [er.RequestController:188][inq-mgg] RESPONSE : {"resultCd":"88","resultMsg":"Already Paid"}
+2023-01-04 18:51:13.997[065113.997+0700.8]INFO [er.RequestController:160][inq-mgg] Authorization header : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtZ2ciLCJleHAiOjE2NzI4NTEwNTAsImlhdCI6MTY3MjgzMzA1MH0.AcTA3_KDGGsHxr-MhmH0eUDEQzNo4qy7u8EzXzawlYki4HYpZKO58FYh4T9TC1WGcNB-DVgyQjx-3G_Lmf1ITQ
+2023-01-04 18:51:13.997[065113.997+0700.8]INFO [er.RequestController:342][jwt-mgg] : jwtExp : 1672851050000
+2023-01-04 18:51:13.997[065113.997+0700.8]INFO [er.RequestController:345][jwt-mgg] : timeNow : 1672833073997
+2023-01-04 18:51:13.997[065113.997+0700.8]INFO [er.RequestController:347][jwt-mgg] : Expired Difference : 17976
+2023-01-04 18:51:14.005[065113.997+0700.8]INFO [er.RequestController:176][inq-mgg] Request Start.
+2023-01-04 18:51:14.005[065113.997+0700.8]INFO [er.RequestController:177][inq-mgg] Inquiry Params Request : {
+    "retnum": "1234567",
+    "customerNo": "03062003521",
+    "sourceBankCode": "1234",
+    "trx_date": "2023‐01‐04",
+    "trx_time": "01:35:00"
+}
+2023-01-04 18:51:14.005[065113.997+0700.8]INFO [er.RequestController:178][inq-mgg] Check Server Port2805
+2023-01-04 18:51:14.005[065113.997+0700.8]INFO [er.RequestController:182][inq-mgg] Send to client Start.
+2023-01-04 18:51:14.005[065113.997+0700.8]INFO [quiry.ProcessInquiry:96][inq-process] =====================================
+2023-01-04 18:51:14.005[065113.997+0700.8]INFO [quiry.ProcessInquiry:97][inq-process] SEND TO BILLER SERVER START : 03062003521
+2023-01-04 18:51:14.013[065113.997+0700.8]INFO [quiry.ProcessInquiry:106][inq-process] REQUEST TO BILLER : jFIH0rm9EqRiqsfJg3zlUpxBC1+FNPvTbU3wlKeJts+RbfmFD53tpppj1pLmZnYCPGGtbPvkuo3kybfwUFRw2w==
+2023-01-04 18:51:14.022[065113.997+0700.8]INFO [quiry.ProcessInquiry:70][inq-process] REQUEST TOKEN TO BILLER : rRJJwSgOZs14ie2h2I4RL6T5CkiZ3C449WNQyqJkNgUPnOk6AoQe53MS8jjigHTa
+2023-01-04 18:51:14.022[065113.997+0700.8]INFO [quiry.ProcessInquiry:76][inq-process] FORM DATA TOKEN TO BILLER : T138mrR8fwDth/LffHIGqv+hgR7KodhGKz9G2WaRo1/ok2ZWan+9TnaJoRjsFYaD0i0PMDJ6oW5yMGCwDRxckYJPi9e9g1r1nGSLVGeB6sg=
+2023-01-04 18:51:14.737[065113.997+0700.8]INFO [quiry.ProcessInquiry:85][inq-process] RESPONSE TOKEN FROM BILLER : {"respcode":"00","user":"fortuna","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ0aXJ0YXR1YWhiZW51YS5uZXQiLCJpYXQiOjE2NzI4MzMwNzcsImp0aSI6Ik9Ua3dhbk0zV0dSTWFGcGFadz09IiwibmJmIjoxNjcyODMzMDg3LCJleHAiOjE2NzI4MzMzODcsImRhdGEiOnsidXNlcm5hbWUiOiJmb3J0dW5hIn0sInN1YiI6bnVsbCwiYXVkIjpudWxsfQ.IUKOrEzCv8iDt5GuuBFPyS92M-qUhGLDTjENhiR22FU"}
+2023-01-04 18:51:14.737[065113.997+0700.8]INFO [quiry.ProcessInquiry:113][inq-process] FORM DATA TO BILLER : u4Mt2P97UE2RLEQ4MamPHBIp+0UKU++ntjxxm6FgFMwtx1sVLCCIp4oxD92l3w1Y1Kmkip1iZzVD0bh4HHxV1L96UB2/sP0nZ0fLZYXWWyL7nzK0wKdP2pnmKeNzNIObDMtn4X3BsudbjIsy65MVdJCCVyIlLV/p1L7Ctc5FM/HtI6F2t3EWj+t4sNMkO8uwu4jz37ZoBD7tMEIc754DWkIQ3/ZCsDOzzNecRZWWTeJ0tZ5tRLzZXGmksEYM+thiD+Z+R6v8bvjHGb3wllXDxBMuHXfzfnF8uVnleIqq9LN5eU5GdUfgTWVUtNfBMLIuzvf0GnsHOQlFusX0qgOmPfjuuIJ408t1DagZ3w/GtsgGLAqk85MoU4Fi7rr2pxIJMD4vrZ4wduD+9LdM5YYlrrusP5hfEH59i91UkmuAvrwspxb3UqWK1xrJxf9+7Dix4F3PcgGjvBoEO435qKUXEWeG8IJrU4Du
+2023-01-04 18:51:16.153[065113.997+0700.8]INFO [quiry.ProcessInquiry:122][inq-process] RESPONSE FROM BILLER : {"custno":"03062003521","custname":"HERMAN L. ACHFAS","custaddr":"Pondok Benda Indah - N 1 \/ 12 #20213187","numperiod":0,"periods":"","used":0,"bill":0,"fines":0,"total":0,"respcode":"13","message":"Data tagihan telah lunas"}
+2023-01-04 18:51:16.153[065113.997+0700.8]INFO [quiry.ProcessInquiry:135][inq-process] RESPONSE BILLER CODE : 13
+2023-01-04 18:51:16.153[065113.997+0700.8]INFO [quiry.ProcessInquiry:136][inq-process] RESPONSE BILLER CODE Message : Data tagihan telah lunas
+2023-01-04 18:51:16.153[065113.997+0700.8]INFO [quiry.ProcessInquiry:137][inq-process] =====================================
+2023-01-04 18:51:16.153[065113.997+0700.8]INFO [er.RequestController:188][inq-mgg] RESPONSE : {"resultCd":"88","resultMsg":"Already Paid"}
+2023-01-04 18:51:21.673[065121.673+0700.4]INFO [er.RequestController:160][inq-mgg] Authorization header : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtZ2ciLCJleHAiOjE2NzI4NTEwNTAsImlhdCI6MTY3MjgzMzA1MH0.AcTA3_KDGGsHxr-MhmH0eUDEQzNo4qy7u8EzXzawlYki4HYpZKO58FYh4T9TC1WGcNB-DVgyQjx-3G_Lmf1ITQ
+2023-01-04 18:51:21.673[065121.673+0700.4]INFO [er.RequestController:342][jwt-mgg] : jwtExp : 1672851050000
+2023-01-04 18:51:21.673[065121.673+0700.4]INFO [er.RequestController:345][jwt-mgg] : timeNow : 1672833081673
+2023-01-04 18:51:21.673[065121.673+0700.4]INFO [er.RequestController:347][jwt-mgg] : Expired Difference : 17968
+2023-01-04 18:51:21.673[065121.673+0700.4]INFO [er.RequestController:176][inq-mgg] Request Start.
+2023-01-04 18:51:21.673[065121.673+0700.4]INFO [er.RequestController:177][inq-mgg] Inquiry Params Request : {
+    "retnum": "1234567",
+    "customerNo": "03062003524",
+    "sourceBankCode": "1234",
+    "trx_date": "2023‐01‐04",
+    "trx_time": "01:35:00"
+}
+2023-01-04 18:51:21.673[065121.673+0700.4]INFO [er.RequestController:178][inq-mgg] Check Server Port2805
+2023-01-04 18:51:21.673[065121.673+0700.4]INFO [er.RequestController:182][inq-mgg] Send to client Start.
+2023-01-04 18:51:21.673[065121.673+0700.4]INFO [quiry.ProcessInquiry:96][inq-process] =====================================
+2023-01-04 18:51:21.673[065121.673+0700.4]INFO [quiry.ProcessInquiry:97][inq-process] SEND TO BILLER SERVER START : 03062003524
+2023-01-04 18:51:21.681[065121.673+0700.4]INFO [quiry.ProcessInquiry:106][inq-process] REQUEST TO BILLER : wYswuJxHb1ZVodlnFtGWJ9HsFUjyjHTDzaaoOSinMCpVHv0fqWK70b5NR4gLAToA328VE+XhRFT/OuYER6cE1w==
+2023-01-04 18:51:21.689[065121.673+0700.4]INFO [quiry.ProcessInquiry:70][inq-process] REQUEST TOKEN TO BILLER : gbjBvMUtIkjTruHsBy5Bloq/LDsmUjJwYZoHh8CbVzbYoUt2icbnLgB/HFQxJDjj
+2023-01-04 18:51:21.689[065121.673+0700.4]INFO [quiry.ProcessInquiry:76][inq-process] FORM DATA TOKEN TO BILLER : /s0f6HJZ1lUMsG231hxNnkDrRts7FNP+I0J1QFnazsogSFBWJvANd7kiNKXHcnJpG8GKtsYw20he7rlLb37U90SCx39Fm1v/oZTbl0aF4Ro=
+2023-01-04 18:51:21.750[065121.673+0700.4]INFO [quiry.ProcessInquiry:85][inq-process] RESPONSE TOKEN FROM BILLER : {"respcode":"00","user":"fortuna","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ0aXJ0YXR1YWhiZW51YS5uZXQiLCJpYXQiOjE2NzI4MzMwODQsImp0aSI6Ik9Ua3dhbk0zV0dSTWFGcGFadz09IiwibmJmIjoxNjcyODMzMDk0LCJleHAiOjE2NzI4MzMzOTQsImRhdGEiOnsidXNlcm5hbWUiOiJmb3J0dW5hIn0sInN1YiI6bnVsbCwiYXVkIjpudWxsfQ.lqePzm2Zq2_00NA2_f7bzVEtBCOYAhm2Eh0WGG_ymJI"}
+2023-01-04 18:51:21.752[065121.673+0700.4]INFO [quiry.ProcessInquiry:113][inq-process] FORM DATA TO BILLER : gfVlA000CzPZjzL4Gh2wGuh64fJoXOvL+FjLknWsdUOAGD6NrOTKLLkG0jovEp0OgUvf2JC5lTngpbHeoVoi2vOfScIKJkvGf/ox5bN15jOLLdwoeu0OvBb/neMwLnbDoXNGLbJjEUE4W6WILwqHBdO804VXJBfV2uGmqDCYh5nb23TzF3nNY98ypcp0B0p8ZqquEokQ26V0ye39dgoRSb/biLsoV2u6O9x1eUotCJGSXI1rlgWOVKX5oTlAsRLBLXzdia7woUlN1tVtMg+KdBXMbuxLj7IlQY2CP9DBX/cLDXwi0BwtPJ/SJRZ0CjQldsHiTAxVaBL8UoKJ/PXoPzSOhTyzPfE5nVlZ659llZDX792oOAve1ICsMuOkSwtEQgbxonw+JZMNOzNWhl1hD5k0fo9fYCLChYBjcJw7/c48jWLca0ISAcjYJ5NqLJS4qep5TDqQqpvkCBRrLodASpADEOYErWBh
+2023-01-04 18:51:21.811[065121.673+0700.4]INFO [quiry.ProcessInquiry:122][inq-process] RESPONSE FROM BILLER : {"custno":"","custname":"","custaddr":"","numperiod":0,"periods":"","used":0,"bill":0,"fines":0,"total":0,"respcode":"10","message":"Data tagihan tidak ditemukan"}
+2023-01-04 18:51:21.811[065121.673+0700.4]INFO [quiry.ProcessInquiry:135][inq-process] RESPONSE BILLER CODE : 10
+2023-01-04 18:51:21.811[065121.673+0700.4]INFO [quiry.ProcessInquiry:136][inq-process] RESPONSE BILLER CODE Message : Data tagihan tidak ditemukan
+2023-01-04 18:51:21.811[065121.673+0700.4]INFO [quiry.ProcessInquiry:137][inq-process] =====================================
+2023-01-04 18:51:21.811[065121.673+0700.4]INFO [er.RequestController:188][inq-mgg] RESPONSE : {"resultCd":"56","resultMsg":"ID Not Found"}
+2023-01-04 18:51:25.807[065125.807+0700.8]INFO [er.RequestController:160][inq-mgg] Authorization header : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtZ2ciLCJleHAiOjE2NzI4NTEwNTAsImlhdCI6MTY3MjgzMzA1MH0.AcTA3_KDGGsHxr-MhmH0eUDEQzNo4qy7u8EzXzawlYki4HYpZKO58FYh4T9TC1WGcNB-DVgyQjx-3G_Lmf1ITQ
+2023-01-04 18:51:25.807[065125.807+0700.8]INFO [er.RequestController:342][jwt-mgg] : jwtExp : 1672851050000
+2023-01-04 18:51:25.807[065125.807+0700.8]INFO [er.RequestController:345][jwt-mgg] : timeNow : 1672833085807
+2023-01-04 18:51:25.807[065125.807+0700.8]INFO [er.RequestController:347][jwt-mgg] : Expired Difference : 17964
+2023-01-04 18:51:25.807[065125.807+0700.8]INFO [er.RequestController:176][inq-mgg] Request Start.
+2023-01-04 18:51:25.807[065125.807+0700.8]INFO [er.RequestController:177][inq-mgg] Inquiry Params Request : {
+    "retnum": "1234567",
+    "customerNo": "03062003525",
+    "sourceBankCode": "1234",
+    "trx_date": "2023‐01‐04",
+    "trx_time": "01:35:00"
+}
+2023-01-04 18:51:25.807[065125.807+0700.8]INFO [er.RequestController:178][inq-mgg] Check Server Port2805
+2023-01-04 18:51:25.807[065125.807+0700.8]INFO [er.RequestController:182][inq-mgg] Send to client Start.
+2023-01-04 18:51:25.807[065125.807+0700.8]INFO [quiry.ProcessInquiry:96][inq-process] =====================================
+2023-01-04 18:51:25.807[065125.807+0700.8]INFO [quiry.ProcessInquiry:97][inq-process] SEND TO BILLER SERVER START : 03062003525
+2023-01-04 18:51:25.815[065125.807+0700.8]INFO [quiry.ProcessInquiry:106][inq-process] REQUEST TO BILLER : twt3n67hESrzRlwFyXAjaGy6/4xGxMxY+1PlAEcx2jGJ0LCdyugmnlrPPkiqzAX1HddTiARv3ei2wq31atEA3w==
+2023-01-04 18:51:25.823[065125.807+0700.8]INFO [quiry.ProcessInquiry:70][inq-process] REQUEST TOKEN TO BILLER : lP2NYhSkp8W84kDXxxnndvmJbCVWxbf4s7jIYkH9gl+GnPYzn8LWRzKXuQtXEumm
+2023-01-04 18:51:25.823[065125.807+0700.8]INFO [quiry.ProcessInquiry:76][inq-process] FORM DATA TOKEN TO BILLER : I7BnGmSolmSXZU2bCzXwsV3E6Nr6VP56z2sGNSuwp9Nx9EjTlREcvGv4ZzXI32m7nb7Du/nY1SKs+nyWG4S+M0Gq19BD+BO3o2Gk02TiXtQ=
+2023-01-04 18:51:34.632[065125.807+0700.8]INFO [quiry.ProcessInquiry:85][inq-process] RESPONSE TOKEN FROM BILLER : {"respcode":"00","user":"fortuna","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ0aXJ0YXR1YWhiZW51YS5uZXQiLCJpYXQiOjE2NzI4MzMwOTcsImp0aSI6Ik9Ua3dhbk0zV0dSTWFGcGFadz09IiwibmJmIjoxNjcyODMzMTA3LCJleHAiOjE2NzI4MzM0MDcsImRhdGEiOnsidXNlcm5hbWUiOiJmb3J0dW5hIn0sInN1YiI6bnVsbCwiYXVkIjpudWxsfQ.U8IT0mJCTZPvw-9wSR8Fpst957TWpz_zEM5lj0NX5lo"}
+2023-01-04 18:51:34.632[065125.807+0700.8]INFO [quiry.ProcessInquiry:113][inq-process] FORM DATA TO BILLER : SvxGtD1OIaa0WZwRdoGDWKuHUG+GdxCGK0/wJW4c1ibG6lJU3ryTxmsBa45S/Z0oDbW9ltIJAs+NAEtzLNxaftJHkrqmNh7Em7hSJmbE5lb87fdOqEoPKj0FvCexGO/cl2V4E0nDqca0QUsjJq5TV+WMtsjnzAf6WVLcy/xmfe5Q5Dcxkgg4WoPR8kQRzoqzc2POANvVWciaLQ7C9grl4E1/NSxAyRP2/N2EFraRhxT9dJhRfb2YQCPvPxvYMy01ChC/svJesXK/YomdWah0PrzIQVHN0TbAU2Eq32q3kNOO4nSQCTFPdMsl9LeTJCFm4Ryu6jYZL5g8M0dYW70X2Cd03fI5pOkgx0RUOSEIIBILNB5uqd7kRSDE/CYlJNeQ+cUG+gqgmbH9nlvyJRqU0oxSp/Ridq7F0wDZ0JzzW2n5LoLyXMjoEj4eKsjNGAVHxQQ9xOvRSt3HdxZZKC+HHfPeb3XMjq5o
+2023-01-04 18:51:35.323[065125.807+0700.8]INFO [quiry.ProcessInquiry:122][inq-process] RESPONSE FROM BILLER : {"custno":"03062003525","custname":"DRS. H. SARONI","custaddr":"Pondok Benda Indah - O 1 #20213528 -","numperiod":0,"periods":"","used":0,"bill":0,"fines":0,"total":0,"respcode":"13","message":"Data tagihan telah lunas"}
+2023-01-04 18:51:35.323[065125.807+0700.8]INFO [quiry.ProcessInquiry:135][inq-process] RESPONSE BILLER CODE : 13
+2023-01-04 18:51:35.323[065125.807+0700.8]INFO [quiry.ProcessInquiry:136][inq-process] RESPONSE BILLER CODE Message : Data tagihan telah lunas
+2023-01-04 18:51:35.323[065125.807+0700.8]INFO [quiry.ProcessInquiry:137][inq-process] =====================================
+2023-01-04 18:51:35.323[065125.807+0700.8]INFO [er.RequestController:188][inq-mgg] RESPONSE : {"resultCd":"88","resultMsg":"Already Paid"}
+2023-01-04 18:51:41.215[065141.215+0700.6]INFO [er.RequestController:160][inq-mgg] Authorization header : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtZ2ciLCJleHAiOjE2NzI4NTEwNTAsImlhdCI6MTY3MjgzMzA1MH0.AcTA3_KDGGsHxr-MhmH0eUDEQzNo4qy7u8EzXzawlYki4HYpZKO58FYh4T9TC1WGcNB-DVgyQjx-3G_Lmf1ITQ
+2023-01-04 18:51:41.215[065141.215+0700.6]INFO [er.RequestController:342][jwt-mgg] : jwtExp : 1672851050000
+2023-01-04 18:51:41.215[065141.215+0700.6]INFO [er.RequestController:345][jwt-mgg] : timeNow : 1672833101215
+2023-01-04 18:51:41.215[065141.215+0700.6]INFO [er.RequestController:347][jwt-mgg] : Expired Difference : 17948
+2023-01-04 18:51:41.215[065141.215+0700.6]INFO [er.RequestController:176][inq-mgg] Request Start.
+2023-01-04 18:51:41.215[065141.215+0700.6]INFO [er.RequestController:177][inq-mgg] Inquiry Params Request : {
+    "retnum": "1234567",
+    "customerNo": "03062003526",
+    "sourceBankCode": "1234",
+    "trx_date": "2023‐01‐04",
+    "trx_time": "01:35:00"
+}
+2023-01-04 18:51:41.215[065141.215+0700.6]INFO [er.RequestController:178][inq-mgg] Check Server Port2805
+2023-01-04 18:51:41.215[065141.215+0700.6]INFO [er.RequestController:182][inq-mgg] Send to client Start.
+2023-01-04 18:51:41.223[065141.215+0700.6]INFO [quiry.ProcessInquiry:96][inq-process] =====================================
+2023-01-04 18:51:41.223[065141.215+0700.6]INFO [quiry.ProcessInquiry:97][inq-process] SEND TO BILLER SERVER START : 03062003526
+2023-01-04 18:51:41.282[065141.215+0700.6]INFO [quiry.ProcessInquiry:106][inq-process] REQUEST TO BILLER : VK1/gDfklHsK1uS5RzwmZxznrUrkjdnx8eZ5vXfMv1rpfIqqGT0wlH4T3HykBNg+aRS0pCGHu1HxGxLU9zwb1Q==
+2023-01-04 18:51:41.290[065141.215+0700.6]INFO [quiry.ProcessInquiry:70][inq-process] REQUEST TOKEN TO BILLER : 7Fft8/aHg7iurc9/LzVmYzHaNbmG9RxseREpLcgHdfxtNvM/VVz7OIUUekXeT5nJ
+2023-01-04 18:51:41.298[065141.215+0700.6]INFO [quiry.ProcessInquiry:76][inq-process] FORM DATA TOKEN TO BILLER : WWlGj5dQjfkVReglhQSmkwF1+62wz+BZ853inRXi0CQsWl6hNsmMVrCDqvHjU6TJslE5d+BUQj66XYNXt3UJQOEwk9+C/9Z0+5/sypZ+nBs=
+2023-01-04 18:51:41.655[065141.215+0700.6]INFO [quiry.ProcessInquiry:85][inq-process] RESPONSE TOKEN FROM BILLER : {"respcode":"00","user":"fortuna","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ0aXJ0YXR1YWhiZW51YS5uZXQiLCJpYXQiOjE2NzI4MzMxMDQsImp0aSI6Ik9Ua3dhbk0zV0dSTWFGcGFadz09IiwibmJmIjoxNjcyODMzMTE0LCJleHAiOjE2NzI4MzM0MTQsImRhdGEiOnsidXNlcm5hbWUiOiJmb3J0dW5hIn0sInN1YiI6bnVsbCwiYXVkIjpudWxsfQ.Z9PkwxzKJPNJSyaLP3Gkwfbvj7yWmFpXPNgIxv3yIQQ"}
+2023-01-04 18:51:41.655[065141.215+0700.6]INFO [quiry.ProcessInquiry:113][inq-process] FORM DATA TO BILLER : flORhifpA/Z/8Pfeo/vDPJZzNsjRPFewoPCvbpEWxrhUgbmgkFixHKMFHZ9PLRPU0yql0zymJF0JPNnDR0dniIAGizy/kB9mM/ujZv/S1CTHOSY+B7ZytCwmamBrwGbxd6FKgtp6zf3Haq+mBk0VWtqp+X4YDPOlhArLhrGXj02tn6EHR7Dl1UQGDzVwN9Fu7Z2zIJXR8Vyn83L2BTFvrYC4xcjjW01GoE2vT4LiyW/OeA8VJVT7QLHZy/LVkDe0lU1QdblzOK5/nRGbJYW6OoWJY9frWkUzrRcEOWDeBGMtEgujxHJuINDx+BJ6CMo1lrCefjJBAW08PbDJmcx+vtxPt9aQjoKJVjQDm9G+UT2wvM0rovqeBoeK5e6C4Ryx1FZhsmIFgoY29ds0ZWRylgtocCnExOnsRxnOihPXzE602P5oc2YK808DSZw6+U1dJ3CUJClgfa6pjMPK13uw4UCBV67JoPrh
+2023-01-04 18:51:44.711[065141.215+0700.6]INFO [quiry.ProcessInquiry:122][inq-process] RESPONSE FROM BILLER : {"custno":"03062003526","custname":"BUDI TISTIANTO","custaddr":"Pondok Benda Indah - L 1 \/ 24 #20213934 -","numperiod":0,"periods":"","used":0,"bill":0,"fines":0,"total":0,"respcode":"13","message":"Data tagihan telah lunas"}
+2023-01-04 18:51:44.711[065141.215+0700.6]INFO [quiry.ProcessInquiry:135][inq-process] RESPONSE BILLER CODE : 13
+2023-01-04 18:51:44.711[065141.215+0700.6]INFO [quiry.ProcessInquiry:136][inq-process] RESPONSE BILLER CODE Message : Data tagihan telah lunas
+2023-01-04 18:51:44.711[065141.215+0700.6]INFO [quiry.ProcessInquiry:137][inq-process] =====================================
+2023-01-04 18:51:44.711[065141.215+0700.6]INFO [er.RequestController:188][inq-mgg] RESPONSE : {"resultCd":"88","resultMsg":"Already Paid"}
+2023-01-04 18:51:51.717[065151.717+0700.9]INFO [er.RequestController:160][inq-mgg] Authorization header : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtZ2ciLCJleHAiOjE2NzI4NTEwNTAsImlhdCI6MTY3MjgzMzA1MH0.AcTA3_KDGGsHxr-MhmH0eUDEQzNo4qy7u8EzXzawlYki4HYpZKO58FYh4T9TC1WGcNB-DVgyQjx-3G_Lmf1ITQ
+2023-01-04 18:51:51.717[065151.717+0700.9]INFO [er.RequestController:342][jwt-mgg] : jwtExp : 1672851050000
+2023-01-04 18:51:51.717[065151.717+0700.9]INFO [er.RequestController:345][jwt-mgg] : timeNow : 1672833111717
+2023-01-04 18:51:51.717[065151.717+0700.9]INFO [er.RequestController:347][jwt-mgg] : Expired Difference : 17938
+2023-01-04 18:51:51.717[065151.717+0700.9]INFO [er.RequestController:176][inq-mgg] Request Start.
+2023-01-04 18:51:51.717[065151.717+0700.9]INFO [er.RequestController:177][inq-mgg] Inquiry Params Request : {
+    "retnum": "1234567",
+    "customerNo": "03062003527",
+    "sourceBankCode": "1234",
+    "trx_date": "2023‐01‐04",
+    "trx_time": "01:35:00"
+}
+2023-01-04 18:51:51.717[065151.717+0700.9]INFO [er.RequestController:178][inq-mgg] Check Server Port2805
+2023-01-04 18:51:51.717[065151.717+0700.9]INFO [er.RequestController:182][inq-mgg] Send to client Start.
+2023-01-04 18:51:51.717[065151.717+0700.9]INFO [quiry.ProcessInquiry:96][inq-process] =====================================
+2023-01-04 18:51:51.717[065151.717+0700.9]INFO [quiry.ProcessInquiry:97][inq-process] SEND TO BILLER SERVER START : 03062003527
+2023-01-04 18:51:51.730[065151.717+0700.9]INFO [quiry.ProcessInquiry:106][inq-process] REQUEST TO BILLER : mhZKh8NenpmrmebVQT/3t0UotY3znPnF9BS+m3PDoR4L0ywDjWoCVoNeg5YYmWIBTsK6xNztAvioI3Rj14mGRA==
+2023-01-04 18:51:51.734[065151.717+0700.9]INFO [quiry.ProcessInquiry:70][inq-process] REQUEST TOKEN TO BILLER : +LGNyGHkwMOrueSGc4AFgh2/ew8wtfT597ey57Ax9oU7xFGHVt2rxfQK9jI2W3uL
+2023-01-04 18:51:51.737[065151.717+0700.9]INFO [quiry.ProcessInquiry:76][inq-process] FORM DATA TOKEN TO BILLER : PtKCQtnoZzOIGJeJ2le07b1i97qNzqdVsXqZp7Q9r7HAd0rg6AG4Dcg3wKX4nSKXg598z0EmnaGMp8BzbO5lB/ZWum1hwJHH5d4LvSwqCg8=
+2023-01-04 18:51:58.379[065151.717+0700.9]INFO [quiry.ProcessInquiry:85][inq-process] RESPONSE TOKEN FROM BILLER : {"respcode":"00","user":"fortuna","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ0aXJ0YXR1YWhiZW51YS5uZXQiLCJpYXQiOjE2NzI4MzMxMTUsImp0aSI6Ik9Ua3dhbk0zV0dSTWFGcGFadz09IiwibmJmIjoxNjcyODMzMTI1LCJleHAiOjE2NzI4MzM0MjUsImRhdGEiOnsidXNlcm5hbWUiOiJmb3J0dW5hIn0sInN1YiI6bnVsbCwiYXVkIjpudWxsfQ.ZmZy_wPfPGHBpAIOHGkhGy8YZRPYI-HfvfSFrKixUzw"}
+2023-01-04 18:51:58.383[065151.717+0700.9]INFO [quiry.ProcessInquiry:113][inq-process] FORM DATA TO BILLER : AUW4e25Jty7dmX90KFOm3ysI0OtL4ELXHuzn8wIKnyVfqzAotKIBOcQ3kmG0DeDXqpmk9qdo/M3rSZj3da5SFO5Iue+QxgeevpjOXgMo3A6RSih5eRP9FlugKVyodKt0xyA2DZHrtq4MJv53TAuXkK9oJxIM77GqCXeB2D7fNZfVOcILVNm48L6AvCdNHOxuH8iABoPPhYi1vw5fWdJdG7yqaJQ+uDtm8xkdA4v/NrmmhUwp4q4pOZFeg7RI6Zwp5D+FW6u3m/tKB5b5avMG2cMH0qtGgA0O0sjXxp0GKri5yfuaa6n0vLsiz6k6kLS691f0EKPiC8sHje/2SvevsJkl7KvDexzklxon7SPrODrDaydAJkq/fxtCoUmLL2VGIYe9OTgd4GETD2sN6zq42ASKnc0CRD58UTlHN3pDaRbha9m1ukFesujQ5sIJCMGR3DMRhyPBqAESwDBqmTkZ879hiLHJdTzL
+2023-01-04 18:52:02.385[065151.717+0700.9]INFO [quiry.ProcessInquiry:122][inq-process] RESPONSE FROM BILLER : {"custno":"03062003527","custname":"ENDANG HERYANSYAH","custaddr":"Pondok Benda Indah - L 1 \/ 23 #20213933 -","numperiod":0,"periods":"","used":0,"bill":0,"fines":0,"total":0,"respcode":"13","message":"Data tagihan telah lunas"}
+2023-01-04 18:52:02.388[065151.717+0700.9]INFO [quiry.ProcessInquiry:135][inq-process] RESPONSE BILLER CODE : 13
+2023-01-04 18:52:02.388[065151.717+0700.9]INFO [quiry.ProcessInquiry:136][inq-process] RESPONSE BILLER CODE Message : Data tagihan telah lunas
+2023-01-04 18:52:02.388[065151.717+0700.9]INFO [quiry.ProcessInquiry:137][inq-process] =====================================
+2023-01-04 18:52:02.388[065151.717+0700.9]INFO [er.RequestController:188][inq-mgg] RESPONSE : {"resultCd":"88","resultMsg":"Already Paid"}
+2023-01-04 18:52:07.441[065207.441+0700.3]INFO [er.RequestController:160][inq-mgg] Authorization header : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtZ2ciLCJleHAiOjE2NzI4NTEwNTAsImlhdCI6MTY3MjgzMzA1MH0.AcTA3_KDGGsHxr-MhmH0eUDEQzNo4qy7u8EzXzawlYki4HYpZKO58FYh4T9TC1WGcNB-DVgyQjx-3G_Lmf1ITQ
+2023-01-04 18:52:07.441[065207.441+0700.3]INFO [er.RequestController:342][jwt-mgg] : jwtExp : 1672851050000
+2023-01-04 18:52:07.441[065207.441+0700.3]INFO [er.RequestController:345][jwt-mgg] : timeNow : 1672833127441
+2023-01-04 18:52:07.441[065207.441+0700.3]INFO [er.RequestController:347][jwt-mgg] : Expired Difference : 17922
+2023-01-04 18:52:07.450[065207.441+0700.3]INFO [er.RequestController:176][inq-mgg] Request Start.
+2023-01-04 18:52:07.450[065207.441+0700.3]INFO [er.RequestController:177][inq-mgg] Inquiry Params Request : {
+    "retnum": "1234567",
+    "customerNo": "03062003528",
+    "sourceBankCode": "1234",
+    "trx_date": "2023‐01‐04",
+    "trx_time": "01:35:00"
+}
+2023-01-04 18:52:07.450[065207.441+0700.3]INFO [er.RequestController:178][inq-mgg] Check Server Port2805
+2023-01-04 18:52:07.450[065207.441+0700.3]INFO [er.RequestController:182][inq-mgg] Send to client Start.
+2023-01-04 18:52:07.450[065207.441+0700.3]INFO [quiry.ProcessInquiry:96][inq-process] =====================================
+2023-01-04 18:52:07.450[065207.441+0700.3]INFO [quiry.ProcessInquiry:97][inq-process] SEND TO BILLER SERVER START : 03062003528
+2023-01-04 18:52:07.458[065207.441+0700.3]INFO [quiry.ProcessInquiry:106][inq-process] REQUEST TO BILLER : TdcLEE9EGDAVya+XUKgOT4LAmdFkSUVvgeI2k515f8UdLP5Ugw8SEVDLjMLdzMXo9qG3DE+np1GZeXqCc3/kSw==
+2023-01-04 18:52:07.458[065207.441+0700.3]INFO [quiry.ProcessInquiry:70][inq-process] REQUEST TOKEN TO BILLER : LJyYcCJUhlZD+3IpDxRwgT/CZNtDPce6mGACzZFifBDDVEXZO7SqAK540oJ/SMK3
+2023-01-04 18:52:07.466[065207.441+0700.3]INFO [quiry.ProcessInquiry:76][inq-process] FORM DATA TOKEN TO BILLER : mOP2myt//y7Ukx5L2CSK7N6ReN9B9vfbZ0l8QaE3Xc+P/Ire3MNj7E1CPZdq5lJTAeEDwHJDv+KwW/NJ57020uCxdPqgdBAND3qhCVItDS0=
+2023-01-04 18:52:15.112[065207.441+0700.3]INFO [quiry.ProcessInquiry:85][inq-process] RESPONSE TOKEN FROM BILLER : {"respcode":"00","user":"fortuna","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ0aXJ0YXR1YWhiZW51YS5uZXQiLCJpYXQiOjE2NzI4MzMxMzUsImp0aSI6Ik9Ua3dhbk0zV0dSTWFGcGFadz09IiwibmJmIjoxNjcyODMzMTQ1LCJleHAiOjE2NzI4MzM0NDUsImRhdGEiOnsidXNlcm5hbWUiOiJmb3J0dW5hIn0sInN1YiI6bnVsbCwiYXVkIjpudWxsfQ.JtXdRaYZVCE6NB44gRAzwtFQH2PAYl7HsI918a_CnRY"}
+2023-01-04 18:52:15.112[065207.441+0700.3]INFO [quiry.ProcessInquiry:113][inq-process] FORM DATA TO BILLER : qjToynKwDsi50UYEabtBgDpi5OoDxUFTjOaaf2lcw3HQfDc2J/bKbkLU+GQ2zjzTDELhkdI2VdhfSUgc5LSBT94dJSZmSY8Miin78adQb9Kn7SA+m5cDQtXvpgHs7ozaX5Hnl3yJNgHrbzF9W+7VPl/RLPC1jwTyuqHUcYOQp4vn2U7P8CGaTUZTGvHMCEeMh9UjN9xt+HGaaTlPNJhWNN2QDxfQbDnjadSTy/9H2HbYB2HgZahII4am1PITVSWgZS5MbLpoXMYR+T763RnfOj9Fz5uz/KoNKdiE5/9kc85tCkNjw9qUUTTbNPDCICA9QtdOLVhY0x1tzXDr63dbQGM5Mlq6yBfpnIkr73aZS8eBAuWODkoNWatBnqr13rliBJLH+CvKH43QgOqp+UnVbZqeYmmn0HJCOqT+CLeDxxE2jrJNGx+Rg2nwMh0rWUO4vVfbZrIwTlmd01tVI15+BQ5Ie+HmF4L7
+2023-01-04 18:52:15.858[065207.441+0700.3]INFO [quiry.ProcessInquiry:122][inq-process] RESPONSE FROM BILLER : {"custno":"03062003528","custname":"HERMIN ASTUTI","custaddr":"Pondok Benda Indah - L 1 \/ 20 #20214227 -","numperiod":12,"periods":"202111,202112,202201,202202,202203,202204,202205,202206,202207,202208,202209,202210","used":69,"bill":725700,"fines":0,"total":725700,"respcode":"00","message":"Sukses"}
+2023-01-04 18:52:15.858[065207.441+0700.3]INFO [quiry.ProcessInquiry:135][inq-process] RESPONSE BILLER CODE : 00
+2023-01-04 18:52:15.858[065207.441+0700.3]INFO [quiry.ProcessInquiry:136][inq-process] RESPONSE BILLER CODE Message : Sukses
+2023-01-04 18:52:15.858[065207.441+0700.3]INFO [quiry.ProcessInquiry:137][inq-process] =====================================
+2023-01-04 18:52:15.866[065207.441+0700.3]INFO [quiry.ProcessInquiry:304][inq-process] Prepare insert to tb_trans.
+2023-01-04 18:52:15.890[065207.441+0700.3]INFO [quiry.ProcessInquiry:357][inq-process] Response Delete : 1
+2023-01-04 18:52:15.890[065207.441+0700.3]INFO [quiry.ProcessInquiry:363][inq-process] delete tb_trans status 03 success
+2023-01-04 18:52:15.890[065207.441+0700.3]INFO [quiry.ProcessInquiry:393][inq-process] insert to tb_trans : {customer_address=Pondok Benda Indah - L 1 / 20 #20214227 -, amount=725700, response_payment=, retnum=1234567, merchant_id=, response_inquiry={"custno":"03062003528","custname":"HERMIN ASTUTI","custaddr":"Pondok Benda Indah - L 1 \/ 20 #20214227 -","numperiod":12,"periods":"202111,202112,202201,202202,202203,202204,202205,202206,202207,202208,202209,202210","used":69,"bill":725700,"fines":0,"total":725700,"respcode":"00","message":"Sukses"}, trxid=TRXIDMGG20230104185215972685, periode=202210, total=725700, additional_data=, fine=0, product_id=1234, customer_name=HERMIN ASTUTI, customer_id=03062003528, status=03}
+2023-01-04 18:52:15.922[065207.441+0700.3]INFO [quiry.ProcessInquiry:524][inq-process] insert to tb_trans success.
+2023-01-04 18:52:15.930[065207.441+0700.3]INFO [er.RequestController:188][inq-mgg] RESPONSE : {"data_pelanggan":"{\"custno\":\"03062003528\",\"custname\":\"HERMIN ASTUTI\",\"custaddr\":\"Pondok Benda Indah - L 1 \\/ 20 #20214227 -\",\"numperiod\":12,\"periods\":\"202111,202112,202201,202202,202203,202204,202205,202206,202207,202208,202209,202210\",\"used\":69,\"bill\":725700,\"fines\":0,\"total\":725700,\"respcode\":\"00\",\"message\":\"Sukses\"}","resultCd":"00","trxid":"TRXIDMGG20230104185215972685","resultMsg":"Success"}
+2023-01-04 18:59:37.060[                 ]WARN [ity.JwtRequestFilter:50]JWT Token does not begin with Bearer String
+2023-01-04 18:59:37.061[                 ]INFO [er.RequestController:105][token-mgg] Get Token Request.{
+    "param": "bWdnOm1nZzIwMjM="
+}
+2023-01-04 18:59:37.062[                 ]INFO [er.RequestController:117][token-mgg] GrantType is : mgg:mgg2023
+2023-01-04 18:59:37.131[                 ]INFO [er.RequestController:137][token-mgg] TOKEN : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtZ2ciLCJleHAiOjE2NzI4NTE1NzcsImlhdCI6MTY3MjgzMzU3N30.dTKEZpV6dQXe0K3voms-YJAjkBkrkWuaoMMWBtKAQBx0jshrZGJzdg4x-ffdmqmwNBkVUJx8N2BEWFQYAgPYJw
+2023-01-04 18:59:37.131[                 ]INFO [er.RequestController:141][token-mgg] : jwtExp : 1672851577000
+2023-01-04 18:59:37.131[                 ]INFO [er.RequestController:144][token-mgg] : timeNow : 1672833577131
+2023-01-04 18:59:37.131[                 ]INFO [er.RequestController:146][token-mgg] : Expired : 17999
+2023-01-04 19:00:05.227[070005.227+0700.3]INFO [er.RequestController:160][inq-mgg] Authorization header : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtZ2ciLCJleHAiOjE2NzI4NTE1NzcsImlhdCI6MTY3MjgzMzU3N30.dTKEZpV6dQXe0K3voms-YJAjkBkrkWuaoMMWBtKAQBx0jshrZGJzdg4x-ffdmqmwNBkVUJx8N2BEWFQYAgPYJw
+2023-01-04 19:00:05.227[070005.227+0700.3]INFO [er.RequestController:342][jwt-mgg] : jwtExp : 1672851577000
+2023-01-04 19:00:05.227[070005.227+0700.3]INFO [er.RequestController:345][jwt-mgg] : timeNow : 1672833605227
+2023-01-04 19:00:05.227[070005.227+0700.3]INFO [er.RequestController:347][jwt-mgg] : Expired Difference : 17971
+2023-01-04 19:00:05.227[070005.227+0700.3]INFO [er.RequestController:176][inq-mgg] Request Start.
+2023-01-04 19:00:05.227[070005.227+0700.3]INFO [er.RequestController:177][inq-mgg] Inquiry Params Request : {
+    "retnum": "1234567",
+    "customerNo": "03062003528",
+    "sourceBankCode": "1234",
+    "trx_date": "2023‐01‐04",
+    "trx_time": "01:35:00"
+}
+2023-01-04 19:00:05.227[070005.227+0700.3]INFO [er.RequestController:178][inq-mgg] Check Server Port2805
+2023-01-04 19:00:05.227[070005.227+0700.3]INFO [er.RequestController:182][inq-mgg] Send to client Start.
+2023-01-04 19:00:05.227[070005.227+0700.3]INFO [quiry.ProcessInquiry:96][inq-process] =====================================
+2023-01-04 19:00:05.227[070005.227+0700.3]INFO [quiry.ProcessInquiry:97][inq-process] SEND TO BILLER SERVER START : 03062003528
+2023-01-04 19:00:05.238[070005.227+0700.3]INFO [quiry.ProcessInquiry:106][inq-process] REQUEST TO BILLER : lndE5B9fwtfDV7T0bNRw6Nxn4H1MmXZY29vrJ6PpvZG1Rc3xQVLiEbEnCkhErjgi2VE+03Ighlo6jr+HG4/0GA==
+2023-01-04 19:00:05.238[070005.227+0700.3]INFO [quiry.ProcessInquiry:70][inq-process] REQUEST TOKEN TO BILLER : +ZFj7uoXF5KpI8q+EdIfxh/U7JtrOnVcqd+otdNKl9aM0VPdIhqkTMKZGrkE1681
+2023-01-04 19:00:05.244[070005.227+0700.3]INFO [quiry.ProcessInquiry:76][inq-process] FORM DATA TOKEN TO BILLER : rJd6h79ex8USfmOF5zQxtEHKo0F/eMPwM8lXaFxPzh64tNHMxppDp6kysoO65x+GqeZ55BNfZMYlIsMfgUb1KDvCXqEgPIvNbcvTJEyXN40=
+2023-01-04 19:00:05.453[070005.227+0700.3]INFO [quiry.ProcessInquiry:85][inq-process] RESPONSE TOKEN FROM BILLER : {"respcode":"00","user":"fortuna","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ0aXJ0YXR1YWhiZW51YS5uZXQiLCJpYXQiOjE2NzI4MzM2MDgsImp0aSI6Ik9Ua3dhbk0zV0dSTWFGcGFadz09IiwibmJmIjoxNjcyODMzNjE4LCJleHAiOjE2NzI4MzM5MTgsImRhdGEiOnsidXNlcm5hbWUiOiJmb3J0dW5hIn0sInN1YiI6bnVsbCwiYXVkIjpudWxsfQ.bMtfExFnTv0K6OwhAb0QvaC207HUFj3dsyvsAjFtj60"}
+2023-01-04 19:00:05.461[070005.227+0700.3]INFO [quiry.ProcessInquiry:113][inq-process] FORM DATA TO BILLER : TEW6Ew1RinsvlBtJTxJgJcAvABdEwZWGWJCwyyaZ/SuLkoo6Co/vmMe5MKN59TY1yO2iQbVrRAk/O9b4zszvM3OeVo6gMv/Hy/CoeVmURpFAPJIML875AtrQUFxSr/mfGlt1RZGIdDqx6tACFuNEhsqy26BE6bLXjvG2d8RrH95X0aS3CMHstHKR9cViCIcbHd83zeGHzLGTRcfNQJbtq0hFOk/Iu3QJ4nosXnbDLTReR0UFlAFh5gRpv++AuL85f8bq6UACGV25IJJXYiOvsiSAzrYrgz9g9Hbl1bYOzNv16SeAc5fMYP4787dAS7YMk4/wlBqMtZrfhX0wCmEXkrqGpBDCndu/VRhWWdlY2AoIj2XjHSLR/3oW+M6PP8/l/7p1NMwzHvbmMj9hHjNG649VvcTjvKzrzrklk29ZEW3TRrc2bYp/l3hDr2p1XuRMF9cAtlsgOxxtoIVPSXnFHkAeaC2W4SGW
+2023-01-04 19:00:05.510[070005.227+0700.3]INFO [quiry.ProcessInquiry:122][inq-process] RESPONSE FROM BILLER : {"custno":"03062003528","custname":"HERMIN ASTUTI","custaddr":"Pondok Benda Indah - L 1 \/ 20 #20214227 -","numperiod":12,"periods":"202111,202112,202201,202202,202203,202204,202205,202206,202207,202208,202209,202210","used":69,"bill":725700,"fines":0,"total":725700,"respcode":"00","message":"Sukses"}
+2023-01-04 19:00:05.515[070005.227+0700.3]INFO [quiry.ProcessInquiry:135][inq-process] RESPONSE BILLER CODE : 00
+2023-01-04 19:00:05.515[070005.227+0700.3]INFO [quiry.ProcessInquiry:136][inq-process] RESPONSE BILLER CODE Message : Sukses
+2023-01-04 19:00:05.515[070005.227+0700.3]INFO [quiry.ProcessInquiry:137][inq-process] =====================================
+2023-01-04 19:00:05.515[070005.227+0700.3]INFO [quiry.ProcessInquiry:304][inq-process] Prepare insert to tb_trans.
+2023-01-04 19:00:05.568[070005.227+0700.3]INFO [quiry.ProcessInquiry:357][inq-process] Response Delete : 1
+2023-01-04 19:00:05.568[070005.227+0700.3]INFO [quiry.ProcessInquiry:363][inq-process] delete tb_trans status 03 success
+2023-01-04 19:00:05.568[070005.227+0700.3]INFO [quiry.ProcessInquiry:393][inq-process] insert to tb_trans : {customer_address=Pondok Benda Indah - L 1 / 20 #20214227 -, amount=725700, response_payment=, retnum=1234567, merchant_id=, response_inquiry={"custno":"03062003528","custname":"HERMIN ASTUTI","custaddr":"Pondok Benda Indah - L 1 \/ 20 #20214227 -","numperiod":12,"periods":"202111,202112,202201,202202,202203,202204,202205,202206,202207,202208,202209,202210","used":69,"bill":725700,"fines":0,"total":725700,"respcode":"00","message":"Sukses"}, trxid=TRXIDMGG20230104190005710796, periode=202210, total=725700, additional_data=, fine=0, product_id=1234, customer_name=HERMIN ASTUTI, customer_id=03062003528, status=03}
+2023-01-04 19:00:05.582[070005.227+0700.3]INFO [quiry.ProcessInquiry:524][inq-process] insert to tb_trans success.
+2023-01-04 19:00:05.582[070005.227+0700.3]INFO [er.RequestController:188][inq-mgg] RESPONSE : {"data_pelanggan":"{\"custno\":\"03062003528\",\"custname\":\"HERMIN ASTUTI\",\"custaddr\":\"Pondok Benda Indah - L 1 \\/ 20 #20214227 -\",\"numperiod\":12,\"periods\":\"202111,202112,202201,202202,202203,202204,202205,202206,202207,202208,202209,202210\",\"used\":69,\"bill\":725700,\"fines\":0,\"total\":725700,\"respcode\":\"00\",\"message\":\"Sukses\"}","resultCd":"00","trxid":"TRXIDMGG20230104190005710796","resultMsg":"Success"}
+2023-01-04 19:00:56.288[070056.288+0700.1]INFO [er.RequestController:160][inq-mgg] Authorization header : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtZ2ciLCJleHAiOjE2NzI4NTE1NzcsImlhdCI6MTY3MjgzMzU3N30.dTKEZpV6dQXe0K3voms-YJAjkBkrkWuaoMMWBtKAQBx0jshrZGJzdg4x-ffdmqmwNBkVUJx8N2BEWFQYAgPYJw
+2023-01-04 19:00:56.288[070056.288+0700.1]INFO [er.RequestController:342][jwt-mgg] : jwtExp : 1672851577000
+2023-01-04 19:00:56.288[070056.288+0700.1]INFO [er.RequestController:345][jwt-mgg] : timeNow : 1672833656288
+2023-01-04 19:00:56.288[070056.288+0700.1]INFO [er.RequestController:347][jwt-mgg] : Expired Difference : 17920
+2023-01-04 19:00:56.288[070056.288+0700.1]INFO [er.RequestController:176][inq-mgg] Request Start.
+2023-01-04 19:00:56.288[070056.288+0700.1]INFO [er.RequestController:177][inq-mgg] Inquiry Params Request : {
+    "retnum": "1234567",
+    "customerNo": "03062003528",
+    "sourceBankCode": "1234",
+    "trx_date": "2023‐01‐04",
+    "trx_time": "01:35:00"
+}
+2023-01-04 19:00:56.288[070056.288+0700.1]INFO [er.RequestController:178][inq-mgg] Check Server Port2805
+2023-01-04 19:00:56.288[070056.288+0700.1]INFO [er.RequestController:182][inq-mgg] Send to client Start.
+2023-01-04 19:00:56.288[070056.288+0700.1]INFO [quiry.ProcessInquiry:96][inq-process] =====================================
+2023-01-04 19:00:56.288[070056.288+0700.1]INFO [quiry.ProcessInquiry:97][inq-process] SEND TO BILLER SERVER START : 03062003528
+2023-01-04 19:00:56.294[070056.288+0700.1]INFO [quiry.ProcessInquiry:106][inq-process] REQUEST TO BILLER : FdWvmxsMSEuVrR851cb9vkyModOXdhrVuzXt6VjObKq+1onM1HWWRoPYQrjvlsNtMtXac/G+obWyeieqV8ktTQ==
+2023-01-04 19:00:56.299[070056.288+0700.1]INFO [quiry.ProcessInquiry:70][inq-process] REQUEST TOKEN TO BILLER : bPkYPiG1saf8Kqw+qFva00PCZCagEZq6Ui+WkcJXVl0SvCSOG0J/hVWmsaURZ9Fh
+2023-01-04 19:00:56.302[070056.288+0700.1]INFO [quiry.ProcessInquiry:76][inq-process] FORM DATA TOKEN TO BILLER : Tyk2bv1BMVm0DNqWSkoEKiVvQjG/2pmIL8ASj8Lr9xBXMN5p24w+zl10Dl7Jt75pBG0UCuufU3W2bWwLUrpc/furIafNS91XRdELl8yGtQA=
+2023-01-04 19:00:59.310[070056.288+0700.1]INFO [quiry.ProcessInquiry:85][inq-process] RESPONSE TOKEN FROM BILLER : {"respcode":"00","user":"fortuna","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ0aXJ0YXR1YWhiZW51YS5uZXQiLCJpYXQiOjE2NzI4MzM2NjIsImp0aSI6Ik9Ua3dhbk0zV0dSTWFGcGFadz09IiwibmJmIjoxNjcyODMzNjcyLCJleHAiOjE2NzI4MzM5NzIsImRhdGEiOnsidXNlcm5hbWUiOiJmb3J0dW5hIn0sInN1YiI6bnVsbCwiYXVkIjpudWxsfQ.Ez-2VWumwUWwY3NG7UsM4mt7PKu_VPyozJb5os-2U3I"}
+2023-01-04 19:00:59.318[070056.288+0700.1]INFO [quiry.ProcessInquiry:113][inq-process] FORM DATA TO BILLER : TmvNRmGPEZLuigarbrisUtJKbS/wVyFTpzZPNhwu2U3Cljl755aPNewWDnmYBvEqnpGrzYtsQxzenDr/CG8+kliw0761sW6PCIdn3jVXwVmk7p/TQ0SRE9L1prajgA+OuP8dKT+YT8sGNlWviZlCOlRXOx0DbPgaMDdAw9mRIydltT/p8S3G8pkVLHPhqliif0bRPhZIMVXRvwvB+lEDtEpb8BMIsmoLdJ6IPMYntLxICFMsmDMYrIv8r8nETCy1g5QOuC0ZX/I4LjFVYwkTtVrBBJz8MtT2/sTseQM8/S25fSBSYtTWjT1MSVoppxVCR1t2qg6fabY6had2x+AeBOPaoPu6psbgrWPlpKlMo/qKodIxkgX575f6+5xQT4ghDfcNeON5AJa10FFmhd87TCgNrcsYf5wHRBEAalP8Ix2JadcVX07llq9Aw/MvOURhUXWm4S2jPR2u9zwdPef3nc+DY7Gk27cO
+2023-01-04 19:00:59.356[070056.288+0700.1]INFO [quiry.ProcessInquiry:122][inq-process] RESPONSE FROM BILLER : {"custno":"03062003528","custname":"HERMIN ASTUTI","custaddr":"Pondok Benda Indah - L 1 \/ 20 #20214227 -","numperiod":12,"periods":"202111,202112,202201,202202,202203,202204,202205,202206,202207,202208,202209,202210","used":69,"bill":725700,"fines":0,"total":725700,"respcode":"00","message":"Sukses"}
+2023-01-04 19:00:59.356[070056.288+0700.1]INFO [quiry.ProcessInquiry:135][inq-process] RESPONSE BILLER CODE : 00
+2023-01-04 19:00:59.356[070056.288+0700.1]INFO [quiry.ProcessInquiry:136][inq-process] RESPONSE BILLER CODE Message : Sukses
+2023-01-04 19:00:59.356[070056.288+0700.1]INFO [quiry.ProcessInquiry:137][inq-process] =====================================
+2023-01-04 19:00:59.361[070056.288+0700.1]INFO [quiry.ProcessInquiry:304][inq-process] Prepare insert to tb_trans.
+2023-01-04 19:00:59.364[070056.288+0700.1]INFO [quiry.ProcessInquiry:357][inq-process] Response Delete : 1
+2023-01-04 19:00:59.364[070056.288+0700.1]INFO [quiry.ProcessInquiry:363][inq-process] delete tb_trans status 03 success
+2023-01-04 19:00:59.364[070056.288+0700.1]INFO [quiry.ProcessInquiry:393][inq-process] insert to tb_trans : {customer_address=Pondok Benda Indah - L 1 / 20 #20214227 -, amount=725700, response_payment=, retnum=1234567, merchant_id=, response_inquiry={"custno":"03062003528","custname":"HERMIN ASTUTI","custaddr":"Pondok Benda Indah - L 1 \/ 20 #20214227 -","numperiod":12,"periods":"202111,202112,202201,202202,202203,202204,202205,202206,202207,202208,202209,202210","used":69,"bill":725700,"fines":0,"total":725700,"respcode":"00","message":"Sukses"}, trxid=TRXIDMGG20230104190059472569, periode=202210, total=725700, additional_data=, fine=0, product_id=1234, customer_name=HERMIN ASTUTI, customer_id=03062003528, status=03}
+2023-01-04 19:00:59.371[070056.288+0700.1]INFO [quiry.ProcessInquiry:524][inq-process] insert to tb_trans success.
+2023-01-04 19:00:59.371[070056.288+0700.1]INFO [er.RequestController:188][inq-mgg] RESPONSE : {"data_pelanggan":"{\"custno\":\"03062003528\",\"custname\":\"HERMIN ASTUTI\",\"custaddr\":\"Pondok Benda Indah - L 1 \\/ 20 #20214227 -\",\"numperiod\":12,\"periods\":\"202111,202112,202201,202202,202203,202204,202205,202206,202207,202208,202209,202210\",\"used\":69,\"bill\":725700,\"fines\":0,\"total\":725700,\"respcode\":\"00\",\"message\":\"Sukses\"}","resultCd":"00","trxid":"TRXIDMGG20230104190059472569","resultMsg":"Success"}
+2023-01-04 19:02:27.382[070227.382+0700.3]INFO [er.RequestController:241][pay-mgg] Authorization header : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtZ2ciLCJleHAiOjE2NzI4NTE1NzcsImlhdCI6MTY3MjgzMzU3N30.dTKEZpV6dQXe0K3voms-YJAjkBkrkWuaoMMWBtKAQBx0jshrZGJzdg4x-ffdmqmwNBkVUJx8N2BEWFQYAgPYJw
+2023-01-04 19:02:27.382[070227.382+0700.3]INFO [er.RequestController:342][jwt-mgg] : jwtExp : 1672851577000
+2023-01-04 19:02:27.382[070227.382+0700.3]INFO [er.RequestController:345][jwt-mgg] : timeNow : 1672833747382
+2023-01-04 19:02:27.382[070227.382+0700.3]INFO [er.RequestController:347][jwt-mgg] : Expired Difference : 17829
+2023-01-04 19:02:27.384[070227.382+0700.3]INFO [er.RequestController:257][pay-mgg] Request Start.
+2023-01-04 19:02:27.384[070227.382+0700.3]INFO [er.RequestController:258][pay-mgg] Payment Params Request : {
+    "retnum": "1234567",
+    "trx_date": "2023‐01‐04",
+    "trx_time": "01:35:00",
+    "sourceBankCode": "1234",
+    "customerNo": "03062003528",
+    "trxid": "TRXIDMGG20230104190059472569",
+    "totalAmount": {
+        "value": "725700",
+        "currency": "IDR"
+    }
+}
+2023-01-04 19:02:27.384[070227.382+0700.3]INFO [er.RequestController:259][pay-mgg] Check Server Port2805
+2023-01-04 19:02:27.384[070227.382+0700.3]INFO [er.RequestController:263][pay-mgg] Send to client Start.
+2023-01-04 19:02:27.393[070227.382+0700.3]INFO [yment.ProcessPayment:90][pay-process] =====================================
+2023-01-04 19:02:27.393[070227.382+0700.3]INFO [yment.ProcessPayment:91][pay-process] SEND TO BILLER SERVER START : 03062003528
+2023-01-04 19:02:27.393[070227.382+0700.3]INFO [yment.ProcessPayment:283][pay-process] Cek payment
+2023-01-04 19:02:27.403[070227.382+0700.3]INFO [yment.ProcessPayment:292][pay-process] Data From DB : [{"trxid":"TRXIDMGG20230104190059472569","trans_dt":"20230104","trans_tm":"190059","status":"03","retnum":"1234567","customer_id":"03062003528","customer_name":"HERMIN ASTUTI","customer_address":"Pondok Benda Indah - L 1 / 20 #20214227 -","amount":"725700","fine":"0","total":"725700","response_inquiry":"{\"custno\":\"03062003528\",\"custname\":\"HERMIN ASTUTI\",\"custaddr\":\"Pondok Benda Indah - L 1 \\/ 20 #20214227 -\",\"numperiod\":12,\"periods\":\"202111,202112,202201,202202,202203,202204,202205,202206,202207,202208,202209,202210\",\"used\":69,\"bill\":725700,\"fines\":0,\"total\":725700,\"respcode\":\"00\",\"message\":\"Sukses\"}","response_payment":"","additional_data":"","product_id":"1234","merchant_id":"","periode":"202210"}]
+2023-01-04 19:02:27.403[070227.382+0700.3]INFO [yment.ProcessPayment:368][pay-process] Pass Check trxid
+2023-01-04 19:02:27.414[070227.382+0700.3]INFO [yment.ProcessPayment:119][pay-process] REQUEST TO BILLER : SGwS7ilbGMrvVFYc2cQ1IqgK0l7sXrFz0HbulWHexv7VrhXJptrlCXK4EfwRNwQqvBfKZB+ZfYFyID9Qz9xG2w==
+2023-01-04 19:02:27.418[070227.382+0700.3]INFO [yment.ProcessPayment:64][pay-process] REQUEST TOKEN TO BILLER : Cl1uSP7B7lf/DiiLftRDW/WhNUk0R4UjSsL5mycixV+pd50zXv3rdfJa92SwUMuO
+2023-01-04 19:02:27.426[070227.382+0700.3]INFO [yment.ProcessPayment:70][pay-process] FORM DATA TOKEN TO BILLER : fuULmqKYzf7SMlw6IYtYWuJGtBLEcKqgRJMuJ/T7BsdAKw4kiaK+X6/Wb3D9XCKwMaIvFhIZALfpGO06HsNT+HTQpkb/TsDbU/J9yZTkxxM=
+2023-01-04 19:02:28.762[070227.382+0700.3]INFO [yment.ProcessPayment:79][pay-process] RESPONSE TOKEN FROM BILLER : {"respcode":"00","user":"fortuna","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ0aXJ0YXR1YWhiZW51YS5uZXQiLCJpYXQiOjE2NzI4MzM3NTEsImp0aSI6Ik9Ua3dhbk0zV0dSTWFGcGFadz09IiwibmJmIjoxNjcyODMzNzYxLCJleHAiOjE2NzI4MzQwNjEsImRhdGEiOnsidXNlcm5hbWUiOiJmb3J0dW5hIn0sInN1YiI6bnVsbCwiYXVkIjpudWxsfQ.cDI4REEzHDVNS9PE88c3URiccF2UHLTt79B3hEa1HnU"}
+2023-01-04 19:02:28.762[070227.382+0700.3]INFO [yment.ProcessPayment:126][pay-process] FORM DATA TO BILLER : fLWb1iJQQtWjigMbajkCY+U62KQdGYlqKXIFGaaXIqD3scNFXNkOPnrfRm4sqCaNSpt2aMgxzrRnOGZ9XLTb+FfwVBqxB/4x+KKfZkxHL9ksgEDu+eYVZE/o1b4+kyABVt4Lbk1iVzyr/tztWkpXiVIWWrj5CGHC8VIvkQ0HZWubQRX3nYkAyO1/ZukkmBrpPLv5oLrnY19YGLei+S3lXthA8BzObIEYucyb4lh3cVBwGEpaj5ChwQu2gAP1NYK0TmyOA2so+MIXlkK4G+wwR0OL+usu/7Ew0hphHWqAQ3YMkq83Xr8Oefo2KbDKoKsV3wdv2eA9djsYReXKr3BnpHfXhY4T+r58/Fi8XnDYgUFGoY00m/bVHA+lz6YqEIU19PLNhW1LqIjPwWb/RxxKG2dnk74DBAXiK8IAl7kALlJDhIU5N9ervjRvxubMqgC3bnhXGJeiDL3SzF3zXBtSADO/EnPsZz6i
+2023-01-04 19:02:29.892[070227.382+0700.3]INFO [yment.ProcessPayment:135][pay-process] RESPONSE FROM BILLER : {"status":true,"respcode":"00","message":"Sukses"}
+2023-01-04 19:02:29.892[070227.382+0700.3]INFO [yment.ProcessPayment:148][pay-process] RESPONSE BILLER CODE : 00
+2023-01-04 19:02:29.892[070227.382+0700.3]INFO [yment.ProcessPayment:149][pay-process] RESPONSE BILLER CODE Message : Sukses
+2023-01-04 19:02:29.892[070227.382+0700.3]INFO [yment.ProcessPayment:150][pay-process] =====================================
+2023-01-04 19:02:29.892[070227.382+0700.3]INFO [yment.ProcessPayment:176][pay-process] Response from biller success.
+2023-01-04 19:02:29.892[070227.382+0700.3]INFO [yment.ProcessPayment:177][pay-process] Begin update db after bill success.
+2023-01-04 19:02:29.892[070227.382+0700.3]INFO [yment.ProcessPayment:380][pay-process] Prepare update to tb_trans.
+2023-01-04 19:02:29.899[070227.382+0700.3]INFO [yment.ProcessPayment:392][pay-process] update to tb_trans : {response_payment={"status":true,"respcode":"00","message":"Sukses"}, trxid=TRXIDMGG20230104190059472569, status=00}
+2023-01-04 19:02:29.963[070227.382+0700.3]INFO [yment.ProcessPayment:399][pay-process] update to tb_trans success.
+2023-01-04 19:02:29.963[070227.382+0700.3]INFO [yment.ProcessPayment:183][pay-process] Update db after bill success.
+2023-01-04 19:02:29.972[070227.382+0700.3]INFO [er.RequestController:269][pay-mgg] RESPONSE : {"trxData":"{\"custno\":\"03062003528\",\"custname\":\"HERMIN ASTUTI\",\"custaddr\":\"Pondok Benda Indah - L 1 \\/ 20 #20214227 -\",\"numperiod\":12,\"periods\":\"202111,202112,202201,202202,202203,202204,202205,202206,202207,202208,202209,202210\",\"used\":69,\"bill\":725700,\"fines\":0,\"total\":725700,\"respcode\":\"00\",\"message\":\"Sukses\"}","resultCd":"00","amount":725700,"total":725700,"charge":0,"nama":"HERMIN ASTUTI","idbilling":"03062003528","trxid":"TRXIDMGG20230104190059472569","resultMsg":"Success","alamat":"Pondok Benda Indah - L 1 / 20 #20214227 -"}
+2023-01-04 19:02:42.379[070242.379+0700.6]INFO [er.RequestController:160][inq-mgg] Authorization header : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtZ2ciLCJleHAiOjE2NzI4NTE1NzcsImlhdCI6MTY3MjgzMzU3N30.dTKEZpV6dQXe0K3voms-YJAjkBkrkWuaoMMWBtKAQBx0jshrZGJzdg4x-ffdmqmwNBkVUJx8N2BEWFQYAgPYJw
+2023-01-04 19:02:42.380[070242.379+0700.6]INFO [er.RequestController:342][jwt-mgg] : jwtExp : 1672851577000
+2023-01-04 19:02:42.380[070242.379+0700.6]INFO [er.RequestController:345][jwt-mgg] : timeNow : 1672833762380
+2023-01-04 19:02:42.380[070242.379+0700.6]INFO [er.RequestController:347][jwt-mgg] : Expired Difference : 17814
+2023-01-04 19:02:42.380[070242.379+0700.6]INFO [er.RequestController:176][inq-mgg] Request Start.
+2023-01-04 19:02:42.380[070242.379+0700.6]INFO [er.RequestController:177][inq-mgg] Inquiry Params Request : {
+    "retnum": "1234567",
+    "customerNo": "03062003528",
+    "sourceBankCode": "1234",
+    "trx_date": "2023‐01‐04",
+    "trx_time": "01:35:00"
+}
+2023-01-04 19:02:42.380[070242.379+0700.6]INFO [er.RequestController:178][inq-mgg] Check Server Port2805
+2023-01-04 19:02:42.380[070242.379+0700.6]INFO [er.RequestController:182][inq-mgg] Send to client Start.
+2023-01-04 19:02:42.380[070242.379+0700.6]INFO [quiry.ProcessInquiry:96][inq-process] =====================================
+2023-01-04 19:02:42.380[070242.379+0700.6]INFO [quiry.ProcessInquiry:97][inq-process] SEND TO BILLER SERVER START : 03062003528
+2023-01-04 19:02:42.390[070242.379+0700.6]INFO [quiry.ProcessInquiry:106][inq-process] REQUEST TO BILLER : et5/sHQxD+OaDZA7WN5mh9PTA6np4LRBMsGAAmQKRdy+R3R/ROIT9hagpiQ5zqKfJXT3SXHWHAMCoXWBtyUXVg==
+2023-01-04 19:02:42.397[070242.379+0700.6]INFO [quiry.ProcessInquiry:70][inq-process] REQUEST TOKEN TO BILLER : 4FjYQ+0ONOilLLntUWKPhq6ugBZBW/ZFYn3aHMkReqDfrEyt5w8IMdMLU4rH7S6A
+2023-01-04 19:02:42.405[070242.379+0700.6]INFO [quiry.ProcessInquiry:76][inq-process] FORM DATA TOKEN TO BILLER : vtkUUiPsrnhT3dQ5NtxJ4dnuYbzFpOXCDyte0e5PrwuSLdvZw35eIVIICPL7/PrXa+T+9g6+CmQsT5/5ZvefjuiGdiE6xu3hr7EMWlNws24=
+2023-01-04 19:02:42.502[070242.379+0700.6]INFO [quiry.ProcessInquiry:85][inq-process] RESPONSE TOKEN FROM BILLER : {"respcode":"00","user":"fortuna","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ0aXJ0YXR1YWhiZW51YS5uZXQiLCJpYXQiOjE2NzI4MzM3NjUsImp0aSI6Ik9Ua3dhbk0zV0dSTWFGcGFadz09IiwibmJmIjoxNjcyODMzNzc1LCJleHAiOjE2NzI4MzQwNzUsImRhdGEiOnsidXNlcm5hbWUiOiJmb3J0dW5hIn0sInN1YiI6bnVsbCwiYXVkIjpudWxsfQ.z4kFC1mNPUdCxluUKS14ZF2MlEf0RYcFM0U3KsnCD40"}
+2023-01-04 19:02:42.502[070242.379+0700.6]INFO [quiry.ProcessInquiry:113][inq-process] FORM DATA TO BILLER : SoJvjxY/smS0EDMjQ/eWlP81iVGUGufSumSpZYeibzlM0QBLPFowVK5mB0xL4oLuSfa7g3lmxWe9Hfs+8ls2hhUHISvbCG3CTiKOtk+dfDTakgQxQiGqQpmorIorbS4zmborCqDVhRFDhishzJijdHWNwd5vuazAtgbhehK6N+T+QKue+YnJnHEaBcvbFCCIC0pQ3oTOtf8sBarfPL5OvHVEfE8BKer3G7zrUHtYqxj3SWk3Xr2G+2VmY3OlXEmVsStXRPZ4CuLcaGqFBlg5B3fI73uAq2YyTOALwxVibiPGmmgXhBRUzFXjRn41nZF0+qjXreJPShmLWuvl2jf46Hq5FiUgJtjVwlpNDhVBegOqGT6uSgWhvXpQgJrSJPwDhTWoUm/SiDYVmUpKtgpCALOfTuWu6ZL15eYyD9iCtqsKg/pX5CvthQ514EBdm0cOl0x3YlVyluslQEtSznQjh4rxGbdRM9rR
+2023-01-04 19:02:42.543[070242.379+0700.6]INFO [quiry.ProcessInquiry:122][inq-process] RESPONSE FROM BILLER : {"custno":"03062003528","custname":"HERMIN ASTUTI","custaddr":"Pondok Benda Indah - L 1 \/ 20 #20214227 -","numperiod":0,"periods":"","used":0,"bill":0,"fines":0,"total":0,"respcode":"13","message":"Data tagihan telah lunas"}
+2023-01-04 19:02:42.543[070242.379+0700.6]INFO [quiry.ProcessInquiry:135][inq-process] RESPONSE BILLER CODE : 13
+2023-01-04 19:02:42.543[070242.379+0700.6]INFO [quiry.ProcessInquiry:136][inq-process] RESPONSE BILLER CODE Message : Data tagihan telah lunas
+2023-01-04 19:02:42.543[070242.379+0700.6]INFO [quiry.ProcessInquiry:137][inq-process] =====================================
+2023-01-04 19:02:42.543[070242.379+0700.6]INFO [er.RequestController:188][inq-mgg] RESPONSE : {"resultCd":"88","resultMsg":"Already Paid"}
+2023-01-04 19:03:02.177[070302.176+0700.2]INFO [er.RequestController:160][inq-mgg] Authorization header : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtZ2ciLCJleHAiOjE2NzI4NTE1NzcsImlhdCI6MTY3MjgzMzU3N30.dTKEZpV6dQXe0K3voms-YJAjkBkrkWuaoMMWBtKAQBx0jshrZGJzdg4x-ffdmqmwNBkVUJx8N2BEWFQYAgPYJw
+2023-01-04 19:03:02.177[070302.176+0700.2]INFO [er.RequestController:342][jwt-mgg] : jwtExp : 1672851577000
+2023-01-04 19:03:02.177[070302.176+0700.2]INFO [er.RequestController:345][jwt-mgg] : timeNow : 1672833782177
+2023-01-04 19:03:02.177[070302.176+0700.2]INFO [er.RequestController:347][jwt-mgg] : Expired Difference : 17794
+2023-01-04 19:03:02.177[070302.176+0700.2]INFO [er.RequestController:176][inq-mgg] Request Start.
+2023-01-04 19:03:02.177[070302.176+0700.2]INFO [er.RequestController:177][inq-mgg] Inquiry Params Request : {
+    "retnum": "1234567",
+    "customerNo": "0306200352",
+    "sourceBankCode": "1234",
+    "trx_date": "2023‐01‐04",
+    "trx_time": "01:35:00"
+}
+2023-01-04 19:03:02.181[070302.176+0700.2]INFO [er.RequestController:178][inq-mgg] Check Server Port2805
+2023-01-04 19:03:02.181[070302.176+0700.2]INFO [er.RequestController:182][inq-mgg] Send to client Start.
+2023-01-04 19:03:02.181[070302.176+0700.2]INFO [quiry.ProcessInquiry:96][inq-process] =====================================
+2023-01-04 19:03:02.181[070302.176+0700.2]INFO [quiry.ProcessInquiry:97][inq-process] SEND TO BILLER SERVER START : 0306200352
+2023-01-04 19:03:02.194[070302.176+0700.2]INFO [quiry.ProcessInquiry:106][inq-process] REQUEST TO BILLER : Q8JJTvqZUjiBd1RCLQ+dxbn9WFNhERoXZBrlmTn/c08aR035rmCr1UFw/iZatv/ogSVhO8K52i8=
+2023-01-04 19:03:02.198[070302.176+0700.2]INFO [quiry.ProcessInquiry:70][inq-process] REQUEST TOKEN TO BILLER : F9Myqvn3bUM1EV6hl+LAE8Bm0vMa0HTybRkDGxTnqTsVtcWT2e8nhT2jLfX9e53X
+2023-01-04 19:03:02.202[070302.176+0700.2]INFO [quiry.ProcessInquiry:76][inq-process] FORM DATA TOKEN TO BILLER : oTNWcodSfgrEwu0OEvHAsUVxz7rhQVGx36IEbHAusjmleTCeOpqZYsiMBGp6hl2wpVN3mhaNEd4TfMxmg8HQXMYpCDcih9pA7/TCvtO96iQ=
+2023-01-04 19:03:03.809[070302.176+0700.2]INFO [quiry.ProcessInquiry:85][inq-process] RESPONSE TOKEN FROM BILLER : {"respcode":"00","user":"fortuna","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ0aXJ0YXR1YWhiZW51YS5uZXQiLCJpYXQiOjE2NzI4MzM3ODYsImp0aSI6Ik9Ua3dhbk0zV0dSTWFGcGFadz09IiwibmJmIjoxNjcyODMzNzk2LCJleHAiOjE2NzI4MzQwOTYsImRhdGEiOnsidXNlcm5hbWUiOiJmb3J0dW5hIn0sInN1YiI6bnVsbCwiYXVkIjpudWxsfQ.ukJiiPxYS36CZRCf23MbSMpVaKkUa6IsMNERwP6Z9R0"}
+2023-01-04 19:03:03.809[070302.176+0700.2]INFO [quiry.ProcessInquiry:113][inq-process] FORM DATA TO BILLER : B4VQ+OTFwUAcKgXSITvegwlFkWUxjcji6pYVmu6xwPuBYI8EVDgnbQB+4V5hCA53zZF8WeCq3gvVziQ9Z81pqWc9HuWKf4za8Nnu7kEw3bXLThWraj10BX/rZ1SUtuO7Z/Eh2scaeFJpNUkWb6FXV9vpKIyaMc9QuPZOePAHDByJ3kZbmVwg978BxnMp0yMaE1EWZLpIHsZeKHcfbKf37Qq/Cfg5d5b+/cNQ6AIvoOqIBWMhKTkUsUFD/zbbWBH6a9F3DDTkuIe+iCOQeLdjBbaokmBTqFHqQplatHtrNzXwlX6ZRIJMWs6gWbFYxySy8Rwm5/pEk9oFjrexl0nWRfnE1fvy+25UJz4VxEapTk42ruQamipoRn8ASFNhPR6Y+vbgERMTX9fMKz9fpuzMjLphAzQUdCAr03ZzH42oMNUmhxDLXNpztFCDZ2bLYIF73/kFjubrFjpcENU3RAfZ8pq+jxvdgBa5
+2023-01-04 19:03:04.107[070302.176+0700.2]INFO [quiry.ProcessInquiry:122][inq-process] RESPONSE FROM BILLER : {"custno":"","custname":"","custaddr":"","numperiod":0,"periods":"","used":0,"bill":0,"fines":0,"total":0,"respcode":"10","message":"Data tagihan tidak ditemukan"}
+2023-01-04 19:03:04.107[070302.176+0700.2]INFO [quiry.ProcessInquiry:135][inq-process] RESPONSE BILLER CODE : 10
+2023-01-04 19:03:04.107[070302.176+0700.2]INFO [quiry.ProcessInquiry:136][inq-process] RESPONSE BILLER CODE Message : Data tagihan tidak ditemukan
+2023-01-04 19:03:04.107[070302.176+0700.2]INFO [quiry.ProcessInquiry:137][inq-process] =====================================
+2023-01-04 19:03:04.107[070302.176+0700.2]INFO [er.RequestController:188][inq-mgg] RESPONSE : {"resultCd":"56","resultMsg":"ID Not Found"}
